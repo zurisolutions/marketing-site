@@ -89,7 +89,7 @@ function submitContactForm(e) {
   const form = document.getElementById('contactForm');
   const submitted = document.getElementById('contactSubmitted');
 
-  const data = new FormData();
+  const data = new URLSearchParams();
   data.append(GOOGLE_FORM_ENTRIES.name, document.getElementById('contactName').value);
   data.append(GOOGLE_FORM_ENTRIES.company, document.getElementById('contactCompany').value);
   data.append(GOOGLE_FORM_ENTRIES.email, document.getElementById('contactEmail').value);
@@ -100,7 +100,8 @@ function submitContactForm(e) {
   fetch(GOOGLE_FORM_ACTION, {
     method: 'POST',
     mode: 'no-cors',
-    body: data,
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: data.toString(),
   }).catch(() => {});
 
   if (form) form.style.display = 'none';
