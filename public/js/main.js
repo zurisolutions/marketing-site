@@ -74,10 +74,35 @@ document.querySelectorAll('.fade-up, .fade-in-right').forEach(el => {
 });
 
 /* ── Contact form submission ───────────────────── */
+const GOOGLE_FORM_ACTION = 'https://docs.google.com/forms/d/e/1FAIpQLSfF-r3-FCEE_uj0uXPLfzsuHwhwF3HGfOxRQ7ApnLJT6zTtuA/formResponse';
+const GOOGLE_FORM_ENTRIES = {
+  name: 'entry.334027758',
+  company: 'entry.1013693672',
+  email: 'entry.392384361',
+  phone: 'entry.468573154',
+  service: 'entry.121792333',
+  message: 'entry.1089196283',
+};
+
 function submitContactForm(e) {
   e.preventDefault();
   const form = document.getElementById('contactForm');
   const submitted = document.getElementById('contactSubmitted');
+
+  const data = new FormData();
+  data.append(GOOGLE_FORM_ENTRIES.name, document.getElementById('contactName').value);
+  data.append(GOOGLE_FORM_ENTRIES.company, document.getElementById('contactCompany').value);
+  data.append(GOOGLE_FORM_ENTRIES.email, document.getElementById('contactEmail').value);
+  data.append(GOOGLE_FORM_ENTRIES.phone, document.getElementById('contactPhone').value);
+  data.append(GOOGLE_FORM_ENTRIES.service, document.getElementById('contactService').value);
+  data.append(GOOGLE_FORM_ENTRIES.message, document.getElementById('contactMessage').value);
+
+  fetch(GOOGLE_FORM_ACTION, {
+    method: 'POST',
+    mode: 'no-cors',
+    body: data,
+  }).catch(() => {});
+
   if (form) form.style.display = 'none';
   if (submitted) submitted.style.display = 'block';
 }

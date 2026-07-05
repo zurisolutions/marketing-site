@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="assets/img/zuri-logo-pink.png" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
@@ -16,7 +17,7 @@
   <nav class="navbar" id="navbar">
     <div class="container nav-inner">
       <a href="index.html" class="nav-logo">
-        <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663113433742/atNf8HTmuG5rmLVDifB8TC/zurilogo-pink_a1a042f7.png" alt="Zuri Solutions" class="nav-logo-img" />
+        <img src="assets/img/zuri-logo-pink.png" alt="Zuri Solutions" class="nav-logo-img" />
         <span class="nav-logo-text">Zuri Solutions</span>
       </a>
       <div class="nav-links" id="navLinks">
@@ -318,21 +319,21 @@
           <div class="form-row">
             <div class="form-field">
               <label class="form-label">Name *</label>
-              <input type="text" required placeholder="Your name" class="form-input" />
+              <input type="text" required placeholder="Your name" class="form-input" id="contactName" />
             </div>
             <div class="form-field">
               <label class="form-label">Company *</label>
-              <input type="text" required placeholder="Company name" class="form-input" />
+              <input type="text" required placeholder="Company name" class="form-input" id="contactCompany" />
             </div>
           </div>
           <div class="form-row">
             <div class="form-field">
               <label class="form-label">Email *</label>
-              <input type="email" required placeholder="you@company.com" class="form-input" />
+              <input type="email" required placeholder="you@company.com" class="form-input" id="contactEmail" />
             </div>
             <div class="form-field">
               <label class="form-label">Phone</label>
-              <input type="tel" placeholder="+1 (555) 000-0000" class="form-input" />
+              <input type="tel" placeholder="+1 (555) 000-0000" class="form-input" id="contactPhone" />
             </div>
           </div>
           <div class="form-field">
@@ -350,7 +351,7 @@
           </div>
           <div class="form-field">
             <label class="form-label">Message (optional)</label>
-            <textarea rows="4" placeholder="Anything else you'd like us to know about your workflow or goals..." class="form-input form-textarea"></textarea>
+            <textarea rows="4" placeholder="Anything else you'd like us to know about your workflow or goals..." class="form-input form-textarea" id="contactMessage"></textarea>
           </div>
           <button type="submit" class="btn-primary w-full">Contact Zuri</button>
         </form>
@@ -379,7 +380,7 @@
     <div class="footer-bottom">
       <div class="container footer-bottom-inner">
         <div class="footer-logo">
-          <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663113433742/atNf8HTmuG5rmLVDifB8TC/zurilogo-pink_a1a042f7.png" alt="Zuri Solutions" class="nav-logo-img" />
+          <img src="assets/img/zuri-logo-pink.png" alt="Zuri Solutions" class="nav-logo-img" />
           <span class="footer-tagline">AI Integration · Automation · Custom Software</span>
         </div>
         <div class="footer-links">

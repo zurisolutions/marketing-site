@@ -16,6 +16,16 @@ html {
   scroll-behavior: smooth;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+@media (min-width: 1024px) {
+  html {
+    scroll-snap-type: y mandatory;
+  }
+}
+
 body {
   font-family: 'DM Sans', sans-serif;
   background-color: #FFF0F5;
@@ -316,7 +326,7 @@ img {
 .hero-bg-img {
   position: absolute;
   inset: 0;
-  background-image: url('https://d2xsxph8kpxj0f.cloudfront.net/310519663113433742/atNf8HTmuG5rmLVDifB8TC/zuri-hero-bg-kyLomnhjjkHdHzkG6Jp3Ui.webp');
+  background-image: url('../assets/img/zuri-hero-bg.webp');
   background-size: cover;
   background-position: center right;
   opacity: 0.12;
