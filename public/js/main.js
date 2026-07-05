@@ -99,7 +99,6 @@ function submitContactForm(e) {
 
   fetch(GOOGLE_FORM_ACTION, {
     method: 'POST',
-    mode: 'no-cors',
     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
     body: data.toString(),
   }).catch(() => {});
