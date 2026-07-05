@@ -89,19 +89,37 @@ function submitContactForm(e) {
   const form = document.getElementById('contactForm');
   const submitted = document.getElementById('contactSubmitted');
 
-  const data = new URLSearchParams();
-  data.append(GOOGLE_FORM_ENTRIES.name, document.getElementById('contactName').value);
-  data.append(GOOGLE_FORM_ENTRIES.company, document.getElementById('contactCompany').value);
-  data.append(GOOGLE_FORM_ENTRIES.email, document.getElementById('contactEmail').value);
-  data.append(GOOGLE_FORM_ENTRIES.phone, document.getElementById('contactPhone').value);
-  data.append(GOOGLE_FORM_ENTRIES.service, document.getElementById('contactService').value);
-  data.append(GOOGLE_FORM_ENTRIES.message, document.getElementById('contactMessage').value);
+  const fields = {
+    [GOOGLE_FORM_ENTRIES.name]: document.getElementById('contactName').value,
+    [GOOGLE_FORM_ENTRIES.company]: document.getElementById('contactCompany').value,
+    [GOOGLE_FORM_ENTRIES.email]: document.getElementById('contactEmail').value,
+    [GOOGLE_FORM_ENTRIES.phone]: document.getElementById('contactPhone').value,
+    [GOOGLE_FORM_ENTRIES.service]: document.getElementById('contactService').value,
+    [GOOGLE_FORM_ENTRIES.message]: document.getElementById('contactMessage').value,
+  };
 
-  fetch(GOOGLE_FORM_ACTION, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-    body: data.toString(),
-  }).catch(() => {});
+  const iframe = document.createElement('iframe');
+  iframe.name = 'hiddenGoogleFormFrame';
+  iframe.style.display = 'none';
+  document.body.appendChild(iframe);
+
+  const gForm = document.createElement('form');
+  gForm.action = GOOGLE_FORM_ACTION;
+  gForm.method = 'POST';
+  gForm.target = 'hiddenGoogleFormFrame';
+
+  Object.entries(fields).forEach(([key, value]) => {
+    const input = document.createElement('input');
+    input.type = 'hidden';
+    input.name = key;
+    input.value = value;
+    gForm.appendChild(input);
+  });
+
+  document.body.appendChild(gForm);
+  gForm.submit();
+  gForm.remove();
+  setTimeout(() => iframe.remove(), 5000);
 
   if (form) form.style.display = 'none';
   if (submitted) submitted.style.display = 'block';
