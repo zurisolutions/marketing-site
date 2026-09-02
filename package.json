@@ -1,0 +1,11 @@
+{
+  "name": "zuri-marketing-site",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "check:fr": "node scripts/check-fr-localization.js"
+  },
+  "devDependencies": {
+    "jsdom": "^25.0.1"
+  }
+}

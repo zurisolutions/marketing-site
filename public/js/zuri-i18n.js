@@ -239,7 +239,7 @@
     originalTextNodes.forEach(function (item) {
       var padding = item.original.match(/^\s*/)[0];
       var trailing = item.original.match(/\s*$/)[0];
-      var key = item.original.trim();
+      var key = item.original.trim().replace(/\s+/g, ' ');
       item.node.nodeValue = padding + (language === 'fr' && fr[key] ? fr[key] : key) + trailing;
     });
     document.querySelectorAll('[placeholder], [aria-label], [alt]').forEach(function (element) {
