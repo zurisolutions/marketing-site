@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="fr" class="no-js">
+<head>
+<meta charset="utf-8">
+<script>document.documentElement.className = 'js';</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Implémenter · Zuri Solutions</title>
+<meta name="description" content="Les quick wins d'abord, une première version fonctionnelle 8 jours après la cartographie, puis nous restons à vos côtés pour l'améliorer. Agents IA, automatisations et outils internes sur mesure, branchés sur vos logiciels.">
+<link rel="icon" href="../img/zuri-logo.svg" type="image/svg+xml">
+<link rel="canonical" href="https://www.zurisolutions.dev/fr/implementer.html">
+<link rel="alternate" hreflang="en" href="https://www.zurisolutions.dev/build.html">
+<link rel="alternate" hreflang="fr" href="https://www.zurisolutions.dev/fr/implementer.html">
+<link rel="alternate" hreflang="x-default" href="https://www.zurisolutions.dev/build.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Zuri Solutions">
+<meta property="og:title" content="Implémenter · Zuri Solutions">
+<meta property="og:description" content="Les quick wins d'abord, une première version fonctionnelle 8 jours après la cartographie, puis nous restons à vos côtés pour l'améliorer. Agents IA, automatisations et outils internes sur mesure, branchés sur vos logiciels.">
+<meta property="og:url" content="https://www.zurisolutions.dev/fr/implementer.html">
+<meta property="og:image" content="https://www.zurisolutions.dev/media/hero-poster.webp">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Silkscreen&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/zuri.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Zuri Solutions, accueil">
+      <img src="../img/zuri-logo.svg" alt="" width="33" height="38" class="pixel-img">
+      <span>Zuri <b>Solutions</b></span>
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <a href="comprendre.html">Trouver le temps perdu</a>
+      <a href="implementer.html" aria-current="page">Le récupérer</a>
+      <a href="formation.html">Formation IA</a>
+      <a href="index.html#why-zuri">Pourquoi Zuri</a>
+    </nav>
+    <div class="lang" aria-label="Langue"><a href="../build.html" lang="en" hreflang="en">EN</a><a href="implementer.html" aria-current="true" lang="fr">FR</a></div>
+    <!-- booking: set CONFIG.bookingUrl in js/zuri.js; empty = contact form -->
+    <a class="btn btn-primary" href="#contact" data-dialog="contact-dialog">Réserver mon appel gratuit</a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="mobile-menu">Menu</button>
+  </div>
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile" hidden>
+    <a href="comprendre.html">Trouver le temps perdu</a>
+    <a href="implementer.html" aria-current="page">Le récupérer</a>
+    <a href="formation.html">Formation IA</a>
+    <a href="index.html#why-zuri">Pourquoi Zuri</a>
+    <div class="lang" aria-label="Langue"><a href="../build.html" lang="en" hreflang="en">EN</a><a href="implementer.html" aria-current="true" lang="fr">FR</a></div>
+    <a class="btn btn-primary" href="#contact" data-dialog="contact-dialog">Réserver mon appel gratuit</a>
+  </nav>
+</header>
+
+<main id="top">
+
+<!-- 1. HERO: the tower built block by block, the 8-day build bar underneath -->
+<section class="hero" aria-labelledby="page-title">
+  <div class="clouds" aria-hidden="true">
+    <img class="cloud" src="../img/cloud.svg" alt="">
+    <img class="cloud" src="../img/cloud.svg" alt="">
+    <img class="cloud" src="../img/cloud.svg" alt="">
+  </div>
+  <div class="hud" aria-hidden="true">
+    <span>Niveau 02 · <b>Implémenter</b></span>
+    <span class="mid hearts">♥♥♥</span>
+    <span>Record · <b>quick wins d'abord</b></span>
+  </div>
+  <div class="hero-stage">
+    <div class="hero-text">
+      <nav class="crumbs" aria-label="Fil d'Ariane"><a href="index.html">Accueil</a><span aria-hidden="true">/</span><span>Le récupérer</span></nav>
+      <span class="eyebrow">Étapes 02 à 04 · Prioriser, construire, accompagner</span>
+      <h1 id="page-title">Nous construisons ce qui <em>manquait à votre équipe.</em></h1>
+      <p class="lead">À partir de la cartographie, nous construisons exactement ce qui manque : agents, automatisations et outils internes, branchés sur les logiciels que vous utilisez déjà. Une première version fonctionnelle 8 jours après la cartographie.</p>
+      <div class="ctas">
+        <a class="btn btn-primary" href="#contact" data-dialog="contact-dialog">Réserver mon appel gratuit <span class="arrow" aria-hidden="true">→</span></a>
+        <a class="btn btn-ghost" href="#diagnostic" data-dialog="diagnostic">Où passe mon temps ? <small>3 min</small></a>
+      </div>
+      <p class="press-start" aria-hidden="true"><i></i>Niveau 02 : construire votre premier quick win</p>
+    </div>
+    <div class="hero-video">
+      <div class="hero-crop">
+        <video autoplay muted loop playsinline preload="metadata" poster="../media/tower-poster.webp" width="480" height="480" aria-hidden="true">
+          <source src="../media/tower.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+
+  <!-- build bar: day 1 to day 8 -->
+  <div class="daybar" aria-hidden="true" data-tasks='["Périmètre validé","Connexion à vos outils","Connexion à vos outils","Construction","Construction","Construction","Tests avec votre équipe","En ligne"]'>
+    <ol class="days">
+      <li>J1</li><li>J2</li><li>J3</li><li>J4</li><li>J5</li><li>J6</li><li>J7</li><li>J8</li>
+    </ol>
+    <div class="run-score"><span class="db-task">Périmètre validé</span><span>Jour <b class="db-day">1</b>/8</span></div>
+  </div>
+</section>
+
+<div class="reassure">
+  <ul>
+    <li>Quick wins d'abord</li>
+    <li>1er outil en service 8 jours après la cartographie</li>
+    <li>Sur vos outils existants</li>
+    <li>Une personne valide</li>
+  </ul>
+</div>
+
+<!-- 2. STEP 02 · PRIORITIZE: out of the maze -->
+<section class="section" aria-labelledby="prio-title">
+  <div class="wrap maze-grid">
+    <div class="maze-art reveal"><img class="pixel-img blend" src="../img/maze.png" alt="" width="512" height="512"></div>
+    <div>
+      <span class="eyebrow">Étape 02 · Prioriser</span>
+      <h2 id="prio-title" class="big-h2">Sortir du labyrinthe, une étape à la fois.</h2>
+      <p class="lead-p">La cartographie montre chaque impasse. Nous traçons le chemin le plus court vers la sortie : les quick wins d'abord, classés par impact et par effort.</p>
+      <div class="px-card reveal" style="--d:.08s"><div class="px-win">
+        <div class="px-bar" aria-hidden="true"><i></i><i></i><i></i><span>plan-action.txt</span></div>
+        <ol class="plan">
+          <li class="win"><span class="rk">#1</span><div><b>Factures lues et rapprochées automatiquement</b><small>Quick win · fort impact · faible effort</small></div></li>
+          <li class="win"><span class="rk">#2</span><div><b>Validations en un clic, plus par email</b><small>Quick win · fort impact · faible effort</small></div></li>
+          <li><span class="rk">#3</span><div><b>Paiements préparés automatiquement</b><small>Ensuite · fort impact · effort modéré</small></div></li>
+          <li class="later"><span class="rk">#4</span><div><b>Tableau de bord en direct pour les 4 sites</b><small>Gros chantier</small></div></li>
+        </ol>
+        <p class="plan-note">Plan d'exemple pour le groupe de restaurants fictif de la cartographie.</p>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 2b. QUICK WINS / BIG SWINGS: impact × effort matrix -->
+<section class="section" style="padding-top:0" aria-labelledby="qw-title">
+  <div class="wrap qw-wrap">
+    <div>
+      <span class="eyebrow">Notre méthode de tri</span>
+      <h2 id="qw-title" class="big-h2">Les quick wins d'abord. Les gros chantiers ensuite.</h2>
+      <p class="lead-p">Chaque piste repérée pendant la cartographie est placée sur deux axes : le temps qu'elle fait gagner et l'effort qu'elle demande. On commence en haut à gauche, là où les gains arrivent le plus vite, puis on planifie les projets plus lourds.</p>
+      <p class="qw-note">Les points numérotés reprennent les 4 actions du plan d'exemple ci-dessus.</p>
+    </div>
+    <figure class="qw reveal" aria-label="Matrice impact × effort">
+      <span class="qw-axis qw-axis-y" aria-hidden="true">Impact ↑</span>
+      <div class="qw-board">
+          <div class="qw-q qw-win"><b>Quick wins</b><small>Fort impact · peu d'effort</small><span class="qw-dots" aria-hidden="true"><i>1</i><i>2</i></span><em>On commence ici</em></div>
+          <div class="qw-q qw-big"><b>Gros chantiers</b><small>Fort impact · plus d'effort</small><span class="qw-dots" aria-hidden="true"><i>3</i><i class="qw-dot--ink">4</i></span><em>Planifiés ensuite</em></div>
+          <div class="qw-q qw-fill"><b>Petits ajustements</b><small>Faible impact · peu d'effort</small><em>Quand il reste du temps</em></div>
+          <div class="qw-q qw-skip"><b>Pas rentable</b><small>Faible impact · gros effort</small><em>Écarté</em></div>
+      </div>
+      <span class="qw-axis qw-axis-x" aria-hidden="true">Effort →</span>
+    </figure>
+  </div>
+</section>
+
+<!-- 3. STEP 03 · BUILD: what you get on day 8 (clickable sample tool) -->
+<section class="section method" aria-labelledby="day8-title" style="border-top:2px solid var(--ink)">
+  <div class="wrap day8">
+    <div>
+      <span class="eyebrow">Étape 03 · Construire</span>
+      <h2 id="day8-title" class="big-h2">Voici ce que vous avez au jour 8 du chantier.</h2>
+      <p class="lead-p">Pas un PowerPoint : un outil qui fonctionne. Ici, le quick win n°1 du plan : les factures conformes sont enregistrées toutes seules, et le manager ne voit que celles qui présentent un écart, avec la raison.</p>
+      <ul class="chips"><li>Branché sur vos outils</li><li>Une personne valide</li><li>Utilisé dès le jour 8</li></ul>
+      <p class="try"><span aria-hidden="true">▶</span> Essayez : validez une facture ou interrogez le fournisseur.</p>
+    </div>
+    <div class="px-card reveal"><div class="px-win app" data-app>
+      <div class="px-bar" aria-hidden="true"><i></i><i></i><i></i><span>controle-factures · v1</span></div>
+      <div class="app-head"><b>Factures fournisseurs</b><span class="app-count"><b class="todo">2</b> à traiter · <b>2</b> enregistrées automatiquement</span></div>
+      <ul class="inv">
+        <li class="ok"><span class="st">✓</span><div><b>Fournisseur A · facture 1042</b><small>Conforme à la commande et à la livraison</small></div><em>Enregistrée</em></li>
+        <li class="gap"><span class="st">!</span><div><b>Fournisseur B · facture 2210</b><small>Prix unitaire différent du prix négocié</small></div>
+          <span class="acts"><button type="button" data-act="ok">Valider</button><button type="button" data-act="ask">Interroger le fournisseur</button></span></li>
+        <li class="ok"><span class="st">✓</span><div><b>Fournisseur C · facture 0877</b><small>Conforme à la commande et à la livraison</small></div><em>Enregistrée</em></li>
+        <li class="gap"><span class="st">!</span><div><b>Fournisseur D · facture 3301</b><small>Deux cartons manquants sur le bon de livraison</small></div>
+          <span class="acts"><button type="button" data-act="ok">Valider</button><button type="button" data-act="ask">Interroger le fournisseur</button></span></li>
+      </ul>
+      <p class="app-foot" data-done-label="Validée" data-ask-label="Question envoyée">Outil d'exemple fictif</p>
+    </div></div>
+  </div>
+</section>
+
+<!-- 4. ON YOUR TOOLS: integration hub -->
+<section class="section" aria-labelledby="hub-title">
+  <div class="wrap hub-grid">
+    <div>
+      <span class="eyebrow">Sur vos outils existants</span>
+      <h2 id="hub-title" class="big-h2">Nous connectons, nous ne remplaçons pas.</h2>
+      <p class="lead-p">Votre équipe garde les outils qu'elle connaît. Nous branchons les liens manquants entre eux, pour que l'information circule toute seule au lieu d'être ressaisie.</p>
+    </div>
+    <div class="hub reveal" aria-label="Vos outils connectés grâce à Zuri">
+      <svg class="hub-lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+        <line x1="50" y1="50" x2="12" y2="12"/><line x1="50" y1="50" x2="50" y2="6"/><line x1="50" y1="50" x2="88" y2="12"/>
+        <line x1="50" y1="50" x2="94" y2="50"/><line x1="50" y1="50" x2="88" y2="88"/><line x1="50" y1="50" x2="50" y2="94"/>
+        <line x1="50" y1="50" x2="12" y2="88"/><line x1="50" y1="50" x2="6" y2="50"/>
+      </svg>
+      <ul class="hub-nodes">
+        <li class="hub-node n0"><img class="pixel-img" src="../img/icons/agents.svg" alt="">Email</li>
+        <li class="hub-node n1"><img class="pixel-img" src="../img/icons/spreadsheet.svg" alt="">Tableurs</li>
+        <li class="hub-node n2"><img class="pixel-img" src="../img/icons/document.svg" alt="">Logiciel comptable</li>
+        <li class="hub-node n3"><img class="pixel-img" src="../img/icons/dashboard.svg" alt="">CRM</li>
+        <li class="hub-node n4"><img class="pixel-img" src="../img/icons/papers.svg" alt="">Stock &amp; commandes</li>
+        <li class="hub-node n5"><img class="pixel-img" src="../img/icons/software.svg" alt="">Banque</li>
+        <li class="hub-node n6"><img class="pixel-img" src="../img/icons/prompt.svg" alt="">Messagerie d'équipe</li>
+        <li class="hub-node n7"><img class="pixel-img" src="../img/icons/extension.svg" alt="">Votre site</li>
+      </ul>
+      <div class="hub-core"><img class="pixel-img" src="../img/zuri-logo-clair.svg" alt="" width="40" height="46"><span>Zuri</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. DELIVERED WITH EVERY BUILD -->
+<section class="section method" aria-labelledby="kit-title" style="border-top:2px solid var(--ink)">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Livré avec chaque projet</span>
+      <h2 id="kit-title">Plus qu'un outil.</h2>
+    </div>
+    <ul class="kit">
+      <li class="reveal"><img class="pixel-img" src="../img/icons/software.svg" alt="" width="48" height="48"><h3>L'outil qui fonctionne</h3><p>En ligne, branché sur vos logiciels, utilisé par votre équipe.</p></li>
+      <li class="reveal" style="--d:.06s"><img class="pixel-img" src="../img/icons/document.svg" alt="" width="48" height="48"><h3>Une documentation claire</h3><p>Ce qu'il fait, comment il marche, quoi faire quand quelque chose change.</p></li>
+      <li class="reveal" style="--d:.12s"><img class="pixel-img" src="../img/icons/cap.svg" alt="" width="48" height="48"><h3>Une prise en main par votre équipe</h3><p>Nous montrons à votre équipe comment utiliser les outils en toute confiance, au quotidien.</p></li>
+      <li class="reveal" style="--d:.18s"><img class="pixel-img" src="../img/icons/agents.svg" alt="" width="48" height="48"><h3>Quelqu'un à appeler</h3><p>Un interlocuteur qui connaît votre entreprise et vos outils.</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 6. STEP 04 · SUPPORT & IMPROVE: changelog -->
+<section class="section" aria-labelledby="support-title">
+  <div class="wrap day8">
+    <div>
+      <span class="eyebrow">Étape 04 · Accompagner</span>
+      <h2 id="support-title" class="big-h2">Nous restons à vos côtés.</h2>
+      <p class="lead-p">Nous suivons le temps gagné, ajustons ce qui doit l'être et passons au quick win suivant. Les outils grandissent avec votre entreprise.</p>
+    </div>
+    <div class="px-card px-card--ink reveal"><div class="px-win">
+      <div class="px-bar" aria-hidden="true"><i></i><i></i><i></i><span>versions.md</span></div>
+      <ol class="log">
+        <li class="done"><span class="v">v1.0</span><div><b>En ligne avec l'équipe</b><small>Jour 8</small></div></li>
+        <li class="done"><span class="v">v1.1</span><div><b>Ajusté après les premiers retours</b><small>Premières semaines</small></div></li>
+        <li class="now"><span class="v">v1.2</span><div><b>Quick win suivant : validations en un clic</b><small>En cours</small></div></li>
+        <li><span class="v">suite</span><div><b>Mesurer le temps gagné, choisir le suivant</b><small>Chaque mois</small></div></li>
+      </ol>
+    </div></div>
+  </div>
+</section>
+
+<!-- 7. BONUS LEVEL: training -->
+<section class="section" style="padding-top:0" aria-label="Niveau bonus">
+  <div class="wrap">
+    <a class="level-card reveal" href="formation.html">
+      <div class="level-text">
+        <span class="lvl">Niveau bonus</span>
+        <h2>Former votre équipe</h2>
+        <p>Votre équipe apprend à utiliser l'IA au quotidien et à créer ses propres automatisations. Finançable par votre OPCO.</p>
+        <span class="press"><i></i>Appuyez sur start <span aria-hidden="true">→</span></span>
+      </div>
+      <video autoplay muted loop playsinline preload="metadata" poster="../media/whiteboard-poster.webp" width="320" height="320" aria-hidden="true"><source src="../media/whiteboard.mp4" type="video/mp4"></video>
+    </a>
+  </div>
+</section>
+
+<!-- 8. FINAL CTA -->
+<section class="section dark final" id="contact" aria-labelledby="final-title">
+  <div class="wrap">
+    <img class="runner-goal pixel-img" src="../img/zuri-logo-clair.svg" alt="" width="64" height="74">
+    <span class="eyebrow">Prêt, joueur 1 ?</span>
+    <h2 id="final-title">Construisons votre <em>premier quick win.</em></h2>
+    <p class="lead">Gratuit, sans engagement. On commence par un court appel, puis nous interviewons vos équipes et cartographions la façon dont le travail se fait vraiment.</p>
+    <div class="ctas">
+      <a class="btn btn-primary" href="#contact" data-dialog="contact-dialog">Réserver mon appel gratuit <span class="arrow" aria-hidden="true">→</span></a>
+      <a class="btn btn-ghost" href="#diagnostic" data-dialog="diagnostic">Où passe mon temps ? <small>3 min</small></a>
+    </div>
+    <a class="mail" href="mailto:contact@zurisolutions.dev">Ou écrivez à l'équipe : contact@zurisolutions.dev</a>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <img src="../img/zuri-logo-clair.svg" alt="" width="33" height="38" class="pixel-img" style="height:34px;width:auto">
+      <span>Zuri <b>Solutions</b></span>
+    </a>
+    <nav aria-label="Pied de page">
+      <a href="mailto:contact@zurisolutions.dev">contact@zurisolutions.dev</a>
+      <a href="formation.html">Formation IA</a>
+      <a href="mentions-legales.html">Mentions légales</a>
+      <a href="cgu.html">CGU</a>
+      <a href="confidentialite.html">Confidentialité &amp; cookies</a>
+    </nav>
+    <div class="lang" aria-label="Langue"><a href="../build.html" lang="en" hreflang="en">EN</a><a href="implementer.html" aria-current="true" lang="fr">FR</a></div>
+    <p class="bottom">© 2026 Zuri Solutions · Automatisation IA, logiciels sur mesure &amp; formation des équipes</p>
+  </div>
+</footer>
+
+<!-- DIALOG: diagnostic (built by js/zuri.js) -->
+<dialog class="modal" id="diagnostic" aria-labelledby="diag-title">
+  <div class="px-bar"><span>inefficiency-detective.exe</span><button type="button" data-close aria-label="Fermer">✕</button></div>
+  <div class="modal-body quiz" data-quiz></div>
+</dialog>
+
+<!-- DIALOG: contact -->
+<dialog class="modal" id="contact-dialog" aria-labelledby="contact-title">
+  <div class="px-bar"><span>reserver-appel.exe</span><button type="button" data-close aria-label="Fermer">✕</button></div>
+  <form class="modal-body" data-form="call">
+    <h2 id="contact-title">Réservez votre appel gratuit.</h2>
+    <p class="sub">Gratuit, sans engagement. Parlez-nous un peu de votre entreprise pour que nous arrivions à l'appel préparés.</p>
+    <div class="field-row">
+      <div class="field"><label for="f-name">Nom</label><input id="f-name" name="name" autocomplete="name" required></div>
+      <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+    </div>
+    <div class="field-row">
+      <div class="field"><label for="f-company">Entreprise</label><input id="f-company" name="company" autocomplete="organization" required></div>
+      <div class="field"><label for="f-site">Site web <small>(facultatif)</small></label><input id="f-site" name="site" inputmode="url" autocomplete="url" placeholder="www." data-k="Site web"></div>
+    </div>
+    <div class="field"><label for="f-about">Que fait votre entreprise ?</label><textarea id="f-about" name="about" rows="2" placeholder="ex. 4 restaurants à Lyon, 60 salariés" required data-k="Activité"></textarea></div>
+    <div class="field"><label for="f-size">Taille de l'équipe</label><select id="f-size" name="size" required data-k="Taille de l'équipe"><option value="" disabled selected>Choisir…</option><option>1–5</option><option>6–15</option><option>16–50</option><option>51–200</option><option>200+</option></select></div>
+    <div class="field"><label for="f-msg">Qu'est-ce qui prend trop de temps aujourd'hui ? <small>(facultatif)</small></label><textarea id="f-msg" name="message" rows="3" data-k="Ce qui prend trop de temps"></textarea></div>
+    <div class="hp" aria-hidden="true"><label for="f-hp">Leave empty</label><input id="f-hp" name="hp" tabindex="-1" autocomplete="off"></div>
+    <p class="consent">En envoyant ce formulaire, vous acceptez notre <a href="confidentialite.html">politique de confidentialité</a>.</p>
+    <button class="btn btn-primary" type="submit">Envoyer <span class="arrow" aria-hidden="true">→</span></button>
+    <p class="form-status" role="status"></p>
+  </form>
+</dialog>
+
+<script>
+  // Page config: translatable strings (i18n) and the sample process map
+  window.ZURI = {
+    i18n: {
+      menu: 'Menu', close: 'Fermer', automated: '+1 automatisée', coffee: 'café', gameStart: 'cliquez pour commencer', gameJump: 'clic ou Espace pour sauter',
+      types: { event: 'Déclencheur', task: 'À la main', check: 'Contrôle', sys: 'Outil' },
+      intro: "Voici comment circule une facture fournisseur aujourd'hui. Ça fonctionne, mais quelque chose manque. Cliquez sur une étape, ou lancez le scan.",
+      scan: '▶ Scanner ce qui manque', who: 'Qui', tool: 'Outil',
+      stats: { findings: 'Constats', missing: 'Liens manquants', twice: 'Saisies en double', neck: 'Goulots', steps: 'Étapes', people: 'Personnes', tools: 'Outils' }
+    },
+    pm: {
+      lanes: [
+        { id: 'sup', label: 'Fournisseur', sub: 'externe' },
+        { id: 'mgr', label: 'Manager du restaurant', sub: 'un par site' },
+        { id: 'acc', label: 'Comptabilité', sub: 'siège' },
+        { id: 'sys', label: 'Outils', sub: 'logiciels' }
+      ],
+      nodes: [
+        { id: 't1', lane: 'sup', col: 1, type: 'event', label: 'La facture arrive par email', who: 'Fournisseur', tool: 'Email' },
+        { id: 't2', lane: 'acc', col: 2, type: 'task', label: 'Saisit la facture en comptabilité', who: 'Comptable', tool: 'Logiciel comptable' },
+        { id: 't3', lane: 'sys', col: 3, type: 'sys', label: 'Logiciel comptable', who: 'Comptabilité', tool: 'Logiciel comptable' },
+        { id: 't4', lane: 'mgr', col: 3, type: 'task', label: 'La reçoit pour validation', who: 'Manager du restaurant', tool: 'Email' },
+        { id: 't5', lane: 'mgr', col: 4, type: 'check', label: 'La compare à la livraison, à l\'œil', who: 'Manager du restaurant', tool: 'Bon de livraison + outil de stock' },
+        { id: 't6', lane: 'sys', col: 4, type: 'sys', label: 'Outil de stock et commandes', who: 'Manager du restaurant', tool: 'Outil de stock' },
+        { id: 't7', lane: 'mgr', col: 5, type: 'task', label: 'Valide par email', who: 'Manager du restaurant', tool: 'Email' },
+        { id: 't8', lane: 'acc', col: 6, type: 'task', label: 'Programme le paiement', who: 'Comptable', tool: 'Portail bancaire' },
+        { id: 't9', lane: 'sys', col: 7, type: 'sys', label: 'Banque', who: 'Comptabilité', tool: 'Portail bancaire' }
+      ],
+      edges: [
+        ['t1', 't2', 'email', 'facture'], ['t2', 't3', 'manual', 'saisie'], ['t2', 't4', 'email', 'à valider'],
+        ['t4', 't5', 'manual', ''], ['t6', 't5', 'broken', 'non connecté'], ['t5', 't7', 'manual', ''],
+        ['t7', 't8', 'email', 'validée'], ['t8', 't9', 'manual', 'ressaisie'], ['t3', 't9', 'broken', 'non connecté']
+      ],
+      findings: [
+        { nodes: ['t5', 't6'], kind: 'missing', tag: 'Lien manquant', title: 'Commandes et factures ne se rencontrent jamais', text: 'L\'outil de stock sait ce qui a été commandé et livré, mais la facture est vérifiée à l\'œil.' },
+        { nodes: ['t2'], kind: 'twice', tag: 'Saisie en double', title: 'Chaque facture est ressaisie', text: 'La facture existe déjà en fichier, et pourtant elle est saisie ligne par ligne en comptabilité.' },
+        { nodes: ['t4', 't7'], kind: 'neck', tag: 'Goulot d\'étranglement', title: 'Des validations bloquées dans les boîtes mail', text: 'Les factures à valider arrivent par email, par paquets, souvent en plein service.' },
+        { nodes: ['t8', 't9'], kind: 'twice', tag: 'Saisie en double', title: 'Des paiements saisis à la main', text: 'La comptabilité et la banque ne sont pas connectées : les paiements sont ressaisis.' }
+      ]
+    }
+  };
+</script>
+<script src="../js/zuri.js"></script>
+</body>
+</html>

@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="fr" class="no-js">
+<head>
+<meta charset="utf-8">
+<script>document.documentElement.className = 'js';</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Comprendre · Zuri Solutions</title>
+<meta name="description" content="Avant de construire quoi que ce soit, nous interviewons toutes les personnes concernées et cartographions chaque processus, outil et système d'information. Audit gratuit : vous ne payez qu'une fois la cartographie livrée.">
+<link rel="icon" href="../img/zuri-logo.svg" type="image/svg+xml">
+<link rel="canonical" href="https://www.zurisolutions.dev/fr/comprendre.html">
+<link rel="alternate" hreflang="en" href="https://www.zurisolutions.dev/understand.html">
+<link rel="alternate" hreflang="fr" href="https://www.zurisolutions.dev/fr/comprendre.html">
+<link rel="alternate" hreflang="x-default" href="https://www.zurisolutions.dev/understand.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Zuri Solutions">
+<meta property="og:title" content="Comprendre · Zuri Solutions">
+<meta property="og:description" content="Avant de construire quoi que ce soit, nous interviewons toutes les personnes concernées et cartographions chaque processus, outil et système d'information. Audit gratuit : vous ne payez qu'une fois la cartographie livrée.">
+<meta property="og:url" content="https://www.zurisolutions.dev/fr/comprendre.html">
+<meta property="og:image" content="https://www.zurisolutions.dev/media/hero-poster.webp">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Silkscreen&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/zuri.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Zuri Solutions, accueil">
+      <img src="../img/zuri-logo.svg" alt="" width="33" height="38" class="pixel-img">
+      <span>Zuri <b>Solutions</b></span>
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <a href="comprendre.html" aria-current="page">Trouver le temps perdu</a>
+      <a href="implementer.html">Le récupérer</a>
+      <a href="formation.html">Formation IA</a>
+      <a href="index.html#why-zuri">Pourquoi Zuri</a>
+    </nav>
+    <div class="lang" aria-label="Langue"><a href="../understand.html" lang="en" hreflang="en">EN</a><a href="comprendre.html" aria-current="true" lang="fr">FR</a></div>
+    <!-- booking: set CONFIG.bookingUrl in js/zuri.js; empty = contact form -->
+    <a class="btn btn-primary" href="#contact" data-dialog="contact-dialog">Réserver mon appel gratuit</a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="mobile-menu">Menu</button>
+  </div>
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile" hidden>
+    <a href="comprendre.html" aria-current="page">Trouver le temps perdu</a>
+    <a href="implementer.html">Le récupérer</a>
+    <a href="formation.html">Formation IA</a>
+    <a href="index.html#why-zuri">Pourquoi Zuri</a>
+    <div class="lang" aria-label="Langue"><a href="../understand.html" lang="en" hreflang="en">EN</a><a href="comprendre.html" aria-current="true" lang="fr">FR</a></div>
+    <a class="btn btn-primary" href="#contact" data-dialog="contact-dialog">Réserver mon appel gratuit</a>
+  </nav>
+</header>
+
+<main id="top">
+
+<!-- 1. HERO: game screen, the queue stuck behind the paper wall -->
+<section class="hero" aria-labelledby="page-title">
+  <div class="clouds" aria-hidden="true">
+    <img class="cloud" src="../img/cloud.svg" alt="">
+    <img class="cloud" src="../img/cloud.svg" alt="">
+    <img class="cloud" src="../img/cloud.svg" alt="">
+  </div>
+  <div class="hud" aria-hidden="true">
+    <span>Niveau 01 · <b>Comprendre</b></span>
+    <span class="mid hearts">♥♥♥</span>
+    <span>Niveau suivant · <b>Implémenter</b></span>
+  </div>
+  <div class="hero-stage">
+    <div class="hero-text">
+      <nav class="crumbs" aria-label="Fil d'Ariane"><a href="index.html">Accueil</a><span aria-hidden="true">/</span><span>Trouver le temps perdu</span></nav>
+      <span class="eyebrow">Étape 01 · Audit + cartographie complète des processus</span>
+      <h1 id="page-title">Nous apprenons comment votre entreprise <em>fonctionne vraiment.</em></h1>
+      <p class="lead">Avant de construire quoi que ce soit, nous interviewons toutes les personnes concernées et cartographions chaque processus, outil et système d'information. Pas l'organigramme : le travail tel qu'il se fait vraiment.</p>
+      <div class="ctas">
+        <a class="btn btn-primary" href="#contact" data-dialog="contact-dialog">Réserver mon appel gratuit <span class="arrow" aria-hidden="true">→</span></a>
+        <a class="btn btn-ghost" href="#diagnostic" data-dialog="diagnostic">Où passe mon temps ? <small>3 min</small></a>
+      </div>
+      <p class="press-start" aria-hidden="true"><i></i>Niveau 01 : trouver ce qui bloque vos équipes</p>
+    </div>
+    <div class="hero-video">
+      <div class="hero-crop">
+        <video autoplay muted loop playsinline preload="metadata" poster="../media/queue-poster.webp" width="480" height="480" aria-hidden="true">
+          <source src="../media/queue.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+
+  <!-- scanner strip: the magnifier sweeps a process and flags what's missing -->
+  <div class="scan" aria-hidden="true">
+    <div class="scan-world">
+      <span class="scan-item" style="left:8%"><img class="pixel-img" src="../img/icons/papers.svg" alt=""></span>
+      <span class="scan-item flag" style="left:19%"><img class="pixel-img" src="../img/icons/spreadsheet.svg" alt=""></span>
+      <span class="scan-item" style="left:30%"><img class="pixel-img" src="../img/icons/agents.svg" alt=""></span>
+      <span class="scan-item flag" style="left:41%"><img class="pixel-img" src="../img/icons/clock.svg" alt=""></span>
+      <span class="scan-item" style="left:52%"><img class="pixel-img" src="../img/icons/workflow.svg" alt=""></span>
+      <span class="scan-item flag" style="left:63%"><img class="pixel-img" src="../img/icons/document.svg" alt=""></span>
+      <span class="scan-item" style="left:74%"><img class="pixel-img" src="../img/icons/dashboard.svg" alt=""></span>
+      <span class="scan-item flag" style="left:85%"><img class="pixel-img" src="../img/icons/robot.svg" alt=""></span>
+      <img class="scanner pixel-img" src="../img/01-diagnostiquer.svg" alt="" width="52" height="52">
+    </div>
+    <div class="run-score"><span>Constats <b class="found">0</b></span><span class="run-hint">scan de vos processus…</span></div>
+  </div>
+</section>
+
+<div class="reassure">
+  <ul>
+    <li>30 min à 1 h par personne</li>
+    <li>Entretiens individuels</li>
+    <li>Tous les services</li>
+    <li>Confidentiel</li>
+  </ul>
+</div>
+
+<!-- 2. WHY START HERE -->
+<section class="section" aria-labelledby="why-title">
+  <div class="wrap problem-grid">
+    <div class="problem-intro reveal">
+      <span class="eyebrow">Pourquoi commencer par là</span>
+      <h2 id="why-title">On n'automatise pas ce que personne n'a cartographié.</h2>
+      <p class="lead">Vos équipes savent où ça coince. Personne n'a la vue d'ensemble.</p>
+      <div class="wheel"><img class="pixel-img blend" src="../img/buried-papers.png" alt="" width="440" height="440"></div>
+    </div>
+    <div class="cards-stack">
+      <article class="card reveal"><img class="icon pixel-img" src="../img/icons/papers.svg" alt="" width="48" height="48"><h3>L'organigramme n'est pas le travail.</h3><p>Les processus sur le papier correspondent rarement à ce que font vraiment les équipes au quotidien.</p></article>
+      <article class="card reveal" style="--d:.06s"><img class="icon pixel-img" src="../img/icons/agents.svg" alt="" width="48" height="48"><h3>Le savoir est dans la tête des gens.</h3><p>Astuces, contournements et « à qui demander » vivent avec ceux qui font le travail.</p></article>
+      <article class="card reveal" style="--d:.12s"><img class="icon pixel-img" src="../img/icons/robot.svg" alt="" width="48" height="48"><h3>Automatiser la mauvaise chose coûte deux fois.</h3><p>Sans vision claire, vous payez des outils qui règlent le mauvais problème.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- 3. HOW IT WORKS: zig-zag like the landing method -->
+<section class="section method" aria-labelledby="how-title" style="border-top:2px solid var(--ink)">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Comment ça se passe</span>
+      <h2 id="how-title">Trois phases, une vision complète.</h2>
+    </div>
+    <div class="seq">
+      <div class="seq-line" aria-hidden="true"><i></i></div>
+
+      <article class="seq-step">
+        <div class="seq-text">
+          <span class="seq-num" aria-hidden="true">01</span>
+          <span class="seq-kicker reveal">Avant</span>
+          <h3 class="seq-title reveal" style="--d:.06s">Nous préparons ensemble.</h3>
+          <p class="seq-body reveal" style="--d:.1s">Nous listons les équipes, les personnes à rencontrer et les outils utilisés, pour ne faire perdre de temps à personne.</p>
+          <p class="seq-result reveal" style="--d:.16s">Un plan d'audit qui couvre toute l'entreprise.</p>
+        </div>
+        <div class="seq-visual reveal" style="--d:.08s">
+          <div class="px-card"><div class="px-win">
+            <div class="px-bar" aria-hidden="true"><i></i><i></i><i></i><span>plan-audit.txt</span></div>
+            <div class="px-body px-list-body">
+              <ul class="px-list">
+                <li class="on">Direction</li>
+                <li class="on">Opérations</li>
+                <li class="on">Comptabilité &amp; admin</li>
+                <li class="on">Responsables de site</li>
+                <li>Équipes terrain</li>
+              </ul>
+              <span class="px-tag">Plan prêt</span>
+            </div>
+          </div></div>
+        </div>
+      </article>
+
+      <article class="seq-step seq-step--rev">
+        <div class="seq-text">
+          <span class="seq-num" aria-hidden="true">02</span>
+          <span class="seq-kicker reveal">Pendant</span>
+          <h3 class="seq-title reveal" style="--d:.06s">Nous interviewons toutes les personnes concernées.</h3>
+          <p class="seq-body reveal" style="--d:.1s">Des entretiens individuels de 30 minutes à 1 heure, dans tous les services. Nous passons en revue chaque problème, chaque point d'amélioration et tout ce qui devrait exister pour mieux travailler.</p>
+          <ul class="chips reveal" style="--d:.16s"><li>30 min – 1 h</li><li>Individuel</li><li>Tous les services</li></ul>
+        </div>
+        <div class="seq-visual reveal" style="--d:.08s">
+          <div class="px-card px-card--ink"><div class="px-win">
+            <div class="px-bar" aria-hidden="true"><i></i><i></i><i></i><span>interview.rec</span></div>
+            <div class="px-body px-video">
+              <video autoplay muted loop playsinline preload="metadata" poster="../media/whiteboard-poster.webp" width="480" height="480" aria-hidden="true"><source src="../media/whiteboard.mp4" type="video/mp4"></video>
+              <span class="px-tag">● Rec</span>
+            </div>
+          </div></div>
+        </div>
+      </article>
+
+      <article class="seq-step">
+        <div class="seq-text">
+          <span class="seq-num" aria-hidden="true">03</span>
+          <span class="seq-kicker reveal">Après</span>
+          <h3 class="seq-title reveal" style="--d:.06s">Nous cartographions et analysons.</h3>
+          <p class="seq-body reveal" style="--d:.1s">Chaque processus est dessiné étape par étape, et chaque point de blocage est repéré et expliqué.</p>
+          <p class="seq-result reveal" style="--d:.16s">Une vision complète du fonctionnement réel de votre entreprise.</p>
+        </div>
+        <div class="seq-visual reveal" style="--d:.08s">
+          <div class="px-card"><div class="px-win">
+            <div class="px-bar" aria-hidden="true"><i></i><i></i><i></i><span>cartographie.exe</span></div>
+            <div class="px-body"><img class="pixel-img" src="../img/01-diagnostiquer.svg" alt="" width="220" height="220"><span class="px-tag">Constats repérés</span></div>
+          </div></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 4. WHAT WE LOOK AT: themes ticker -->
+<section class="section" style="padding-bottom:48px" aria-labelledby="look-title">
+  <div class="wrap">
+    <div class="section-head" style="margin-bottom:0">
+      <span class="eyebrow">Ce que nous regardons</span>
+      <h2 id="look-title">Tout ce qui ralentit le travail.</h2>
+    </div>
+  </div>
+</section>
+<div class="ticker ticker--themes" aria-label="Sujets abordés pendant l'audit">
+  <div class="ticker-track">
+    <span class="ticker-item"><img class="pixel-img" src="../img/icons/agents.svg" alt="">Rôles &amp; responsabilités</span>
+    <span class="ticker-item"><img class="pixel-img" src="../img/icons/software.svg" alt="">Outils &amp; fichiers</span>
+    <span class="ticker-item"><img class="pixel-img" src="../img/icons/workflow.svg" alt="">Processus, étape par étape</span>
+    <span class="ticker-item"><img class="pixel-img" src="../img/icons/papers.svg" alt="">Transmissions entre équipes</span>
+    <span class="ticker-item"><img class="pixel-img" src="../img/icons/extension.svg" alt="">Contournements &amp; astuces</span>
+    <span class="ticker-item"><img class="pixel-img" src="../img/icons/spreadsheet.svg" alt="">Données saisies deux fois</span>
+    <span class="ticker-item"><img class="pixel-img" src="../img/icons/prompt.svg" alt="">Questions récurrentes</span>
+    <span class="ticker-item"><img class="pixel-img" src="../img/icons/dashboard.svg" alt="">Ce qui devrait exister pour mieux travailler</span>
+    <span class="ticker-item" aria-hidden="true"><img class="pixel-img" src="../img/icons/agents.svg" alt="">Rôles &amp; responsabilités</span>
+    <span class="ticker-item" aria-hidden="true"><img class="pixel-img" src="../img/icons/software.svg" alt="">Outils &amp; fichiers</span>
+    <span class="ticker-item" aria-hidden="true"><img class="pixel-img" src="../img/icons/workflow.svg" alt="">Processus, étape par étape</span>
+    <span class="ticker-item" aria-hidden="true"><img class="pixel-img" src="../img/icons/papers.svg" alt="">Transmissions entre équipes</span>
+    <span class="ticker-item" aria-hidden="true"><img class="pixel-img" src="../img/icons/extension.svg" alt="">Contournements &amp; astuces</span>
+    <span class="ticker-item" aria-hidden="true"><img class="pixel-img" src="../img/icons/spreadsheet.svg" alt="">Données saisies deux fois</span>
+    <span class="ticker-item" aria-hidden="true"><img class="pixel-img" src="../img/icons/prompt.svg" alt="">Questions récurrentes</span>
+    <span class="ticker-item" aria-hidden="true"><img class="pixel-img" src="../img/icons/dashboard.svg" alt="">Ce qui devrait exister pour mieux travailler</span>
+  </div>
+</div>
+
+<!-- 5. THE MAP -->
+<section class="section method" aria-label="Exemple de cartographie">
+  <div class="wrap">
+      <div class="deliv reveal" id="sample-map">
+        <div class="deliv-head">
+          <div>
+            <span class="seq-kicker">Ce que révèle la cartographie</span>
+            <h3>Nous trouvons ce qui manque.</h3>
+            <p>Nous cartographions chaque processus étape par étape, puis nous signalons ce qui peut être optimisé : les liens manquants entre les outils, les informations saisies deux fois, les goulots d'étranglement et les tâches automatisables. Explorez l'exemple ci-dessous.</p>
+          </div>
+          <ul class="deliv-legend" aria-label="Comment lire la carte">
+            <li><i class="manual"></i>Fait à la main</li>
+            <li><i class="email"></i>Email ou messagerie</li>
+            <li><i class="broken"></i>Lien manquant</li>
+          </ul>
+        </div>
+        <div class="px-bar" aria-hidden="true"><i></i><i></i><i></i><span>cartographie · factures fournisseurs · entreprise fictive</span></div>
+        <div class="pm" id="pm">
+          <div class="pm-bar">
+            <div class="pm-toggle" role="group" aria-label="Affichage">
+              <button type="button" data-view="map" aria-pressed="true">Le processus</button>
+              <button type="button" data-view="scan" aria-pressed="false">▶ Scanner ce qui manque</button>
+            </div>
+            <ul class="pm-stats" aria-live="polite"></ul>
+          </div>
+          <div class="pm-scroll">
+            <div class="pm-canvas">
+              <div class="pm-grid"></div>
+              <svg class="pm-wires" aria-hidden="true"></svg>
+            </div>
+          </div>
+          <p class="pm-hint">Faites glisser pour voir tout le processus →</p>
+          <div class="pm-detail" aria-live="polite"></div>
+        </div>
+        <div class="deliv-foot">
+          <span>Exemple fictif : un processus d'un groupe de 4 restaurants. Votre cartographie couvre tous vos processus, à partir de notre audit de vos équipes et de vos vrais outils.</span>
+        </div>
+      </div>
+
+  </div>
+</section>
+
+<!-- 6. WHAT YOU RECEIVE -->
+<section class="section" aria-labelledby="recv-title">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Ce que vous recevez</span>
+      <h2 id="recv-title">Une vision claire, avant de payer quoi que ce soit.</h2>
+    </div>
+    <ul class="deliverables">
+      <li class="reveal"><div class="px-card"><div class="px-win">
+        <div class="px-bar" aria-hidden="true"><i></i><i></i><i></i><span>carte-processus</span></div>
+        <div class="px-body"><img class="d-ico pixel-img" src="../img/icons/dashboard.svg" alt="" width="56" height="56"><span class="k">01</span><h3>La carte complète des processus</h3><p>Chaque processus, qui fait quoi, avec quel outil, et comment l'information circule entre les équipes.</p></div>
+      </div></div></li>
+      <li class="reveal" style="--d:.08s"><div class="px-card px-card--ink"><div class="px-win">
+        <div class="px-bar" aria-hidden="true"><i></i><i></i><i></i><span>constats.log</span></div>
+        <div class="px-body"><img class="d-ico pixel-img" src="../img/icons/papers.svg" alt="" width="56" height="56"><span class="k">02</span><h3>La liste des constats</h3><p>Liens manquants, données saisies deux fois, goulots d'étranglement : chacun localisé et expliqué.</p></div>
+      </div></div></li>
+      <li class="reveal" style="--d:.16s"><div class="px-card"><div class="px-win">
+        <div class="px-bar" aria-hidden="true"><i></i><i></i><i></i><span>pistes.txt</span></div>
+        <div class="px-body"><img class="d-ico pixel-img" src="../img/icons/workflow.svg" alt="" width="56" height="56"><span class="k">03</span><h3>Vos premières pistes d'automatisation</h3><p>Les tâches automatisables, pour décider avec vous par quoi commencer.</p></div>
+      </div></div></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 7. CONFIDENTIALITY -->
+<section class="section method" aria-labelledby="trust-title" style="border-top:2px solid var(--ink)">
+  <div class="wrap conf">
+    <div>
+      <span class="eyebrow">Confidentialité</span>
+      <h2 id="trust-title">Vos équipes peuvent parler librement.</h2>
+      <ul class="conf-list">
+        <li class="reveal"><h3>Chaque interview est confidentielle.</h3><p>Ce que chacun nous confie reste entre lui et nous.</p></li>
+        <li class="reveal" style="--d:.08s"><h3>Utilisée uniquement pour cartographier vos processus.</h3><p>Les interviews ont un seul but : dessiner comment votre entreprise fonctionne vraiment, pour trouver ce qui peut être amélioré.</p></li>
+      </ul>
+    </div>
+    <div class="stamp-big reveal" aria-hidden="true"><span>Confidentiel</span><small>Utilisé uniquement pour cartographier vos processus</small></div>
+  </div>
+</section>
+
+<!-- 8. PAY AFTER THE MAPPING + NEXT LEVEL -->
+<section class="section" aria-label="Niveau suivant">
+  <div class="wrap">
+    <div class="risk reveal" style="margin-top:0">
+      <p>Vous ne payez rien tant que vos processus et vos systèmes ne sont pas <b>entièrement cartographiés</b>. Vous voyez la valeur avant de dépenser un centime.</p>
+      <a class="btn btn-primary" href="#contact" data-dialog="contact-dialog">Réserver mon appel gratuit <span class="arrow" aria-hidden="true">→</span></a>
+    </div>
+    <a class="level-card reveal" href="implementer.html">
+      <div class="level-text">
+        <span class="lvl">Niveau 02 débloqué</span>
+        <h2>Implémenter</h2>
+        <p>Les quick wins d'abord. Une première version fonctionnelle 8 jours après la cartographie.</p>
+        <span class="press"><i></i>Appuyez sur start <span aria-hidden="true">→</span></span>
+      </div>
+      <video autoplay muted loop playsinline preload="metadata" poster="../media/automation-machine-poster.webp" width="320" height="320" aria-hidden="true"><source src="../media/automation-machine.mp4" type="video/mp4"></video>
+    </a>
+  </div>
+</section>
+
+<!-- 9. FINAL CTA -->
+<section class="section dark final" id="contact" aria-labelledby="final-title">
+  <div class="wrap">
+    <img class="runner-goal pixel-img" src="../img/zuri-logo-clair.svg" alt="" width="64" height="74">
+    <span class="eyebrow">Prêt, joueur 1 ?</span>
+    <h2 id="final-title">Votre entreprise, <em>cartographiée.</em></h2>
+    <p class="lead">Gratuit, sans engagement. On commence par un court appel, puis nous interviewons vos équipes et cartographions la façon dont le travail se fait vraiment.</p>
+    <div class="ctas">
+      <a class="btn btn-primary" href="#contact" data-dialog="contact-dialog">Réserver mon appel gratuit <span class="arrow" aria-hidden="true">→</span></a>
+      <a class="btn btn-ghost" href="#diagnostic" data-dialog="diagnostic">Où passe mon temps ? <small>3 min</small></a>
+    </div>
+    <a class="mail" href="mailto:contact@zurisolutions.dev">Ou écrivez à l'équipe : contact@zurisolutions.dev</a>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <img src="../img/zuri-logo-clair.svg" alt="" width="33" height="38" class="pixel-img" style="height:34px;width:auto">
+      <span>Zuri <b>Solutions</b></span>
+    </a>
+    <nav aria-label="Pied de page">
+      <a href="mailto:contact@zurisolutions.dev">contact@zurisolutions.dev</a>
+      <a href="formation.html">Formation IA</a>
+      <a href="mentions-legales.html">Mentions légales</a>
+      <a href="cgu.html">CGU</a>
+      <a href="confidentialite.html">Confidentialité &amp; cookies</a>
+    </nav>
+    <div class="lang" aria-label="Langue"><a href="../understand.html" lang="en" hreflang="en">EN</a><a href="comprendre.html" aria-current="true" lang="fr">FR</a></div>
+    <p class="bottom">© 2026 Zuri Solutions · Automatisation IA, logiciels sur mesure &amp; formation des équipes</p>
+  </div>
+</footer>
+
+<!-- DIALOG: diagnostic (built by js/zuri.js) -->
+<dialog class="modal" id="diagnostic" aria-labelledby="diag-title">
+  <div class="px-bar"><span>inefficiency-detective.exe</span><button type="button" data-close aria-label="Fermer">✕</button></div>
+  <div class="modal-body quiz" data-quiz></div>
+</dialog>
+
+<!-- DIALOG: contact -->
+<dialog class="modal" id="contact-dialog" aria-labelledby="contact-title">
+  <div class="px-bar"><span>reserver-appel.exe</span><button type="button" data-close aria-label="Fermer">✕</button></div>
+  <form class="modal-body" data-form="call">
+    <h2 id="contact-title">Réservez votre appel gratuit.</h2>
+    <p class="sub">Gratuit, sans engagement. Parlez-nous un peu de votre entreprise pour que nous arrivions à l'appel préparés.</p>
+    <div class="field-row">
+      <div class="field"><label for="f-name">Nom</label><input id="f-name" name="name" autocomplete="name" required></div>
+      <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+    </div>
+    <div class="field-row">
+      <div class="field"><label for="f-company">Entreprise</label><input id="f-company" name="company" autocomplete="organization" required></div>
+      <div class="field"><label for="f-site">Site web <small>(facultatif)</small></label><input id="f-site" name="site" inputmode="url" autocomplete="url" placeholder="www." data-k="Site web"></div>
+    </div>
+    <div class="field"><label for="f-about">Que fait votre entreprise ?</label><textarea id="f-about" name="about" rows="2" placeholder="ex. 4 restaurants à Lyon, 60 salariés" required data-k="Activité"></textarea></div>
+    <div class="field"><label for="f-size">Taille de l'équipe</label><select id="f-size" name="size" required data-k="Taille de l'équipe"><option value="" disabled selected>Choisir…</option><option>1–5</option><option>6–15</option><option>16–50</option><option>51–200</option><option>200+</option></select></div>
+    <div class="field"><label for="f-msg">Qu'est-ce qui prend trop de temps aujourd'hui ? <small>(facultatif)</small></label><textarea id="f-msg" name="message" rows="3" data-k="Ce qui prend trop de temps"></textarea></div>
+    <div class="hp" aria-hidden="true"><label for="f-hp">Leave empty</label><input id="f-hp" name="hp" tabindex="-1" autocomplete="off"></div>
+    <p class="consent">En envoyant ce formulaire, vous acceptez notre <a href="confidentialite.html">politique de confidentialité</a>.</p>
+    <button class="btn btn-primary" type="submit">Envoyer <span class="arrow" aria-hidden="true">→</span></button>
+    <p class="form-status" role="status"></p>
+  </form>
+</dialog>
+
+<script>
+  // Page config: translatable strings (i18n) and the sample process map
+  window.ZURI = {
+    i18n: {
+      menu: 'Menu', close: 'Fermer', automated: '+1 automatisée', coffee: 'café', gameStart: 'cliquez pour commencer', gameJump: 'clic ou Espace pour sauter',
+      types: { event: 'Déclencheur', task: 'À la main', check: 'Contrôle', sys: 'Outil' },
+      intro: "Voici comment circule une facture fournisseur aujourd'hui. Ça fonctionne, mais quelque chose manque. Cliquez sur une étape, ou lancez le scan.",
+      scan: '▶ Scanner ce qui manque', who: 'Qui', tool: 'Outil',
+      stats: { findings: 'Constats', missing: 'Liens manquants', twice: 'Saisies en double', neck: 'Goulots', steps: 'Étapes', people: 'Personnes', tools: 'Outils' }
+    },
+    pm: {
+      lanes: [
+        { id: 'sup', label: 'Fournisseur', sub: 'externe' },
+        { id: 'mgr', label: 'Manager du restaurant', sub: 'un par site' },
+        { id: 'acc', label: 'Comptabilité', sub: 'siège' },
+        { id: 'sys', label: 'Outils', sub: 'logiciels' }
+      ],
+      nodes: [
+        { id: 't1', lane: 'sup', col: 1, type: 'event', label: 'La facture arrive par email', who: 'Fournisseur', tool: 'Email' },
+        { id: 't2', lane: 'acc', col: 2, type: 'task', label: 'Saisit la facture en comptabilité', who: 'Comptable', tool: 'Logiciel comptable' },
+        { id: 't3', lane: 'sys', col: 3, type: 'sys', label: 'Logiciel comptable', who: 'Comptabilité', tool: 'Logiciel comptable' },
+        { id: 't4', lane: 'mgr', col: 3, type: 'task', label: 'La reçoit pour validation', who: 'Manager du restaurant', tool: 'Email' },
+        { id: 't5', lane: 'mgr', col: 4, type: 'check', label: 'La compare à la livraison, à l\'œil', who: 'Manager du restaurant', tool: 'Bon de livraison + outil de stock' },
+        { id: 't6', lane: 'sys', col: 4, type: 'sys', label: 'Outil de stock et commandes', who: 'Manager du restaurant', tool: 'Outil de stock' },
+        { id: 't7', lane: 'mgr', col: 5, type: 'task', label: 'Valide par email', who: 'Manager du restaurant', tool: 'Email' },
+        { id: 't8', lane: 'acc', col: 6, type: 'task', label: 'Programme le paiement', who: 'Comptable', tool: 'Portail bancaire' },
+        { id: 't9', lane: 'sys', col: 7, type: 'sys', label: 'Banque', who: 'Comptabilité', tool: 'Portail bancaire' }
+      ],
+      edges: [
+        ['t1', 't2', 'email', 'facture'], ['t2', 't3', 'manual', 'saisie'], ['t2', 't4', 'email', 'à valider'],
+        ['t4', 't5', 'manual', ''], ['t6', 't5', 'broken', 'non connecté'], ['t5', 't7', 'manual', ''],
+        ['t7', 't8', 'email', 'validée'], ['t8', 't9', 'manual', 'ressaisie'], ['t3', 't9', 'broken', 'non connecté']
+      ],
+      findings: [
+        { nodes: ['t5', 't6'], kind: 'missing', tag: 'Lien manquant', title: 'Commandes et factures ne se rencontrent jamais', text: 'L\'outil de stock sait ce qui a été commandé et livré, mais la facture est vérifiée à l\'œil.' },
+        { nodes: ['t2'], kind: 'twice', tag: 'Saisie en double', title: 'Chaque facture est ressaisie', text: 'La facture existe déjà en fichier, et pourtant elle est saisie ligne par ligne en comptabilité.' },
+        { nodes: ['t4', 't7'], kind: 'neck', tag: 'Goulot d\'étranglement', title: 'Des validations bloquées dans les boîtes mail', text: 'Les factures à valider arrivent par email, par paquets, souvent en plein service.' },
+        { nodes: ['t8', 't9'], kind: 'twice', tag: 'Saisie en double', title: 'Des paiements saisis à la main', text: 'La comptabilité et la banque ne sont pas connectées : les paiements sont ressaisis.' }
+      ]
+    }
+  };
+</script>
+<script src="../js/zuri.js"></script>
+</body>
+</html>

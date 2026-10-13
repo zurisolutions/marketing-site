@@ -1,741 +1,584 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zuri Solutions — AI Automation & Custom Digital Solutions</title>
-    <meta
-      name="description"
-      content="AI automation and custom digital solutions for your business. Find the work your team should not be doing manually."
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" type="image/png" href="assets/img/zuri-logo-pink.png" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/zuri-i18n.css" />
-  </head>
-  <body>
-    <!-- NAVBAR -->
-    <nav class="navbar" id="navbar">
-      <div class="container nav-inner">
-        <a href="index.html" class="nav-logo">
-          <img
-            src="assets/img/zuri-logo-pink.png"
-            alt="Zuri Solutions"
-            class="nav-logo-img"
-          />
-          <span class="nav-logo-text">Zuri Solutions</span>
-        </a>
-        <div class="nav-links" id="navLinks">
-          <a href="how-we-work.html" class="nav-link">How We Work</a>
-          <a href="use-cases.html" class="nav-link">Use Cases</a>
-          <a href="#contact" class="nav-link">Contact</a>
-        </div>
-        <a href="#contact" class="btn-primary nav-cta">Get a Free Audit</a>
-        <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-      <!-- Mobile menu -->
-      <div class="mobile-menu" id="mobileMenu">
-        <a href="how-we-work.html" class="mobile-link">How We Work</a>
-        <a href="use-cases.html" class="mobile-link">Use Cases</a>
-        <a href="#contact" class="mobile-link">Contact</a>
-        <a href="#contact" class="btn-primary mobile-cta">Get a Free Audit</a>
-      </div>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<script>document.documentElement.className = 'js';</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zuri Solutions · AI Automation for Small Businesses</title>
+<meta name="description" content="Free audit, quick wins first, first version 8 days after the mapping. Custom AI agents, automations, internal tools and OPCO-fundable AI training for SMBs.">
+<link rel="icon" href="img/zuri-logo.svg" type="image/svg+xml">
+<link rel="canonical" href="https://www.zurisolutions.dev/">
+<link rel="alternate" hreflang="en" href="https://www.zurisolutions.dev/">
+<link rel="alternate" hreflang="fr" href="https://www.zurisolutions.dev/fr/">
+<link rel="alternate" hreflang="x-default" href="https://www.zurisolutions.dev/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Zuri Solutions">
+<meta property="og:title" content="Zuri Solutions · AI Automation for Small Businesses">
+<meta property="og:description" content="Free audit, quick wins first, first version 8 days after the mapping. Custom AI agents, automations, internal tools and OPCO-fundable AI training for SMBs.">
+<meta property="og:url" content="https://www.zurisolutions.dev/">
+<meta property="og:image" content="https://www.zurisolutions.dev/media/hero-poster.webp">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Silkscreen&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/zuri.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Zuri Solutions, home">
+      <img src="img/zuri-logo.svg" alt="" width="33" height="38" class="pixel-img">
+      <span>Zuri <b>Solutions</b></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="understand.html">Find the lost time</a>
+      <a href="build.html">Win it back</a>
+      <a href="training.html">AI training</a>
+      <a href="index.html#why-zuri">Why Zuri</a>
     </nav>
+    <div class="lang" aria-label="Language">
+      <a href="index.html" aria-current="true" lang="en">EN</a>
+      <a href="fr/index.html" lang="fr" hreflang="fr">FR</a>
+    </div>
+    <!-- booking: set CONFIG.bookingUrl in js/zuri.js; empty = contact form -->
+    <a class="btn btn-primary" href="#contact" data-dialog="contact-dialog">Book my free call</a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="mobile-menu">Menu</button>
+  </div>
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile" hidden>
+    <a href="understand.html">Find the lost time</a>
+    <a href="build.html">Win it back</a>
+    <a href="training.html">AI training</a>
+    <a href="index.html#why-zuri">Why Zuri</a>
+    <div class="lang" aria-label="Language"><a href="index.html" aria-current="true">EN</a><a href="fr/index.html" lang="fr" hreflang="fr">FR</a></div>
+    <a class="btn btn-primary" href="#contact" data-dialog="contact-dialog">Book my free call</a>
+  </nav>
+</header>
 
-    <!-- ═══════════════════════════════════════════════
-       SECTION 1 — HERO
-  ═══════════════════════════════════════════════ -->
-    <section class="hero" id="hero">
-      <div class="hero-bg-img"></div>
-      <div class="hero-overlay-left"></div>
-      <div class="hero-overlay-bottom"></div>
+<main id="top">
 
-      <div class="container hero-grid">
-        <!-- LEFT: headline -->
-        <div class="hero-left">
-          <div class="section-label hero-label">
-            <span class="pink-dot"></span>
-            AI · Automation · Custom Software
-          </div>
-          <h1 class="hero-headline" id="heroHeadline">
-            <!-- Words injected by JS for stagger animation -->
-          </h1>
-        </div>
+<!-- 1. HERO: game title screen -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="clouds" aria-hidden="true">
+    <img class="cloud" src="img/cloud.svg" alt="">
+    <img class="cloud" src="img/cloud.svg" alt="">
+    <img class="cloud" src="img/cloud.svg" alt="">
+  </div>
+  <div class="hud" aria-hidden="true">
+    <span>Level 01 · <b>Your office</b></span>
+    <span class="mid hearts">♥♥♥</span>
+    <span>Hi-score · <b>hours saved</b></span>
+  </div>
 
-        <!-- RIGHT: trust bullets + CTAs -->
-        <div class="hero-right fade-in-right">
-          <div class="trust-list">
-            <div class="trust-item">
-              <span class="pink-dot"></span>
-              <span
-                >No sales pitch — just a practical workflow conversation</span
-              >
-            </div>
-            <div class="trust-item">
-              <span class="pink-dot"></span>
-              <span
-                >We identify opportunities before recommending any build</span
-              >
-            </div>
-            <div class="trust-item">
-              <span class="pink-dot"></span>
-              <span>Quick wins first, larger systems later</span>
-            </div>
-          </div>
-          <div class="hero-ctas">
-            <a href="#contact" class="btn-primary">
-              Get a Free Audit
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <line x1="5" y1="12" x2="19" y2="12" />
-                <polyline points="12 5 19 12 12 19" />
-              </svg>
-            </a>
-            <a href="how-we-work.html" class="btn-outline">
-              <svg
-                width="15"
-                height="15"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="#FF2D78"
-                stroke-width="2.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
-                <polyline points="17 6 23 6 23 12" />
-              </svg>
-              I don't like saving money
-            </a>
-          </div>
-          <p class="hero-micro">
-            FREE AUDIT · NO COMMITMENT · RESULTS IN 8 DAYS
-          </p>
-        </div>
+  <div class="hero-stage">
+    <div class="hero-text">
+      <span class="eyebrow">Less busywork. More time to run your business.</span>
+      <h1 id="hero-title">You didn’t start a business to spend your days <em>copying and pasting.</em></h1>
+      <p class="lead">Chasing updates. Retyping invoices. Hunting for that one spreadsheet. It all adds up, in time and in money. We get to know how your business works, find the jobs your software should be doing, and give your team their time back.</p>
+      <ul class="offers" aria-label="Two ways we help">
+        <li><a href="#what-we-do"><img class="pixel-img" src="img/icons/workflow.svg" alt="" width="32" height="32"><span><b>We build it for you</b><small>Automations &amp; custom tools</small></span></a></li>
+        <li class="offer-train"><a href="training.html"><img class="pixel-img" src="img/icons/cap.svg" alt="" width="32" height="32"><span><b>We train your team</b><small>AI training · OPCO-fundable</small></span></a></li>
+      </ul>
+      <div class="ctas">
+        <a class="btn btn-primary" href="#contact" data-dialog="contact-dialog">Book my free call <span class="arrow" aria-hidden="true">→</span></a>
+        <a class="btn btn-ghost" href="#diagnostic" data-dialog="diagnostic">Where’s my time going? <small>3 min</small></a>
       </div>
-
-      <div class="scroll-indicator">
-        <span class="scroll-label">SCROLL</span>
-        <div class="scroll-line"></div>
+      <p class="press-start" aria-hidden="true"><i></i>Free first call · No commitment · No jargon</p>
+    </div>
+    <div class="hero-video">
+      <div class="hero-crop">
+        <video autoplay muted loop playsinline preload="metadata" poster="media/hero-poster.webp" width="624" height="624" aria-hidden="true">
+          <source src="media/hero.mp4" type="video/mp4">
+        </video>
       </div>
-    </section>
+    </div>
+  </div>
 
-    <!-- ═══════════════════════════════════════════════
-       SECTION 2 — WHAT WE BUILD (Services)
-  ═══════════════════════════════════════════════ -->
-    <section class="services section-alt" id="services">
-      <div class="container">
-        <div class="section-header fade-up">
-          <div class="section-label">
-            <span class="pink-dot"></span>What We Build
-          </div>
-          <h2 class="section-h2">
-            AI automation and custom digital solutions<br />
-            <span class="pink-text">for your business.</span>
-          </h2>
-          <p class="section-sub">
-            Not generic AI tools. Custom digital systems designed around real
-            business workflows.
-          </p>
-        </div>
+  <!-- endless runner: the Zuri worker jumps over the daily obstacles -->
+  <div class="run" tabindex="0" role="button" aria-label="Mini-game: click or press Space to jump over the tasks">
+    <div class="run-world" aria-hidden="true">
+      <img class="machine pixel-img" src="img/03-construire.svg" alt="" width="64" height="64">
+      <img class="runner pixel-img" src="img/zuri-logo.svg" alt="" width="44" height="50">
+    </div>
+    <div class="run-score" aria-hidden="true"><span>Tasks automated <b class="score">000</b></span><span>Coffee <b class="coffee">00</b></span><span class="run-hint">click to start</span></div>
+    <div class="game-over" hidden>
+      <b class="go-title">Game over</b>
+      <span class="go-score">Tasks automated <b class="go-n">000</b></span>
+      <button type="button" class="go-retry">Retry</button>
+    </div>
+  </div>
+</section>
 
-        <div class="services-grid">
-          <div class="service-card fade-up delay-1">
-            <div class="service-icon">
-              <svg
-                width="22"
-                height="22"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="#FF2D78"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <rect x="2" y="3" width="20" height="14" rx="2" />
-                <line x1="8" y1="21" x2="16" y2="21" />
-                <line x1="12" y1="17" x2="12" y2="21" />
-              </svg>
-            </div>
-            <h3 class="service-title">Custom Digital Solutions</h3>
-            <p class="service-body">
-              Websites, portals, dashboards, internal tools, inventory systems,
-              admin panels, reporting tools, and custom software that help
-              businesses operate faster.
-            </p>
-          </div>
-          <div class="service-card fade-up delay-2">
-            <div class="service-icon">
-              <svg
-                width="22"
-                height="22"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="#FF2D78"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <circle cx="12" cy="12" r="3" />
-                <path d="M19.07 4.93a10 10 0 0 1 0 14.14" />
-                <path d="M4.93 4.93a10 10 0 0 0 0 14.14" />
-              </svg>
-            </div>
-            <h3 class="service-title">AI Automation</h3>
-            <p class="service-body">
-              Practical AI systems that reduce repetitive work: email drafting,
-              document generation, data extraction, summarization, customer
-              support assistance, and task routing.
-            </p>
-          </div>
-          <div class="service-card fade-up delay-3">
-            <div class="service-icon">
-              <svg
-                width="22"
-                height="22"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="#FF2D78"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
-              </svg>
-            </div>
-            <h3 class="service-title">Workflow Automation</h3>
-            <p class="service-body">
-              Automate handoffs, notifications, approvals, data movement,
-              reporting, and recurring processes across tools your team already
-              uses.
-            </p>
-          </div>
-          <div class="service-card fade-up delay-1">
-            <div class="service-icon">
-              <svg
-                width="22"
-                height="22"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="#FF2D78"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="M12 2a10 10 0 1 0 10 10" />
-                <path d="M12 6v6l4 2" />
-              </svg>
-            </div>
-            <h3 class="service-title">Custom AI Agents</h3>
-            <p class="service-body">
-              Targeted AI agents for lookup work, document-heavy tasks, internal
-              support, research, drafting, and operational assistance.
-            </p>
-          </div>
-          <div class="service-card fade-up delay-2">
-            <div class="service-icon">
-              <svg
-                width="22"
-                height="22"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="#FF2D78"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <rect x="3" y="3" width="18" height="18" rx="2" />
-                <line x1="3" y1="9" x2="21" y2="9" />
-                <line x1="9" y1="21" x2="9" y2="9" />
-              </svg>
-            </div>
-            <h3 class="service-title">Dashboards & Internal Tools</h3>
-            <p class="service-body">
-              Systems that give leadership better visibility into operations,
-              performance, inventory, workflows, and team activity.
-            </p>
-          </div>
-          <div class="service-card fade-up delay-3">
-            <div class="service-icon">
-              <svg
-                width="22"
-                height="22"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="#FF2D78"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path
-                  d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
-                />
-                <polyline points="14 2 14 8 20 8" />
-              </svg>
-            </div>
-            <h3 class="service-title">Chrome Extensions & Lightweight Tools</h3>
-            <p class="service-body">
-              Browser-based tools and extensions that make everyday work faster
-              without forcing teams into a completely new platform.
-            </p>
-          </div>
-        </div>
+<div class="reassure">
+  <ul>
+    <li>Free audit call</li>
+    <li>First tool live 8 days after mapping</li>
+    <li>Easiest wins first</li>
+    <li>Pay nothing until your processes are mapped</li>
+  </ul>
+</div>
+
+<!-- 3. PROBLEM -->
+<section class="section" aria-labelledby="problem-title">
+  <div class="wrap problem-grid">
+    <div class="problem-intro reveal">
+      <span class="eyebrow">The problem</span>
+      <h2 id="problem-title">Sound familiar?</h2>
+      <p class="lead">Everyone’s busy. So why does the important stuff keep slipping to tomorrow?</p>
+      <div class="wheel">
+        <video autoplay muted loop playsinline preload="metadata" poster="media/hamster-wheel-poster.webp" width="480" height="480" aria-hidden="true">
+          <source src="media/hamster-wheel.mp4" type="video/mp4">
+        </video>
       </div>
-    </section>
+    </div>
+    <div class="cards-2">
+      <article class="card reveal">
+        <img class="icon pixel-img" src="img/icons/spreadsheet.svg" alt="" width="48" height="48">
+        <h3>Same information. Typed in for the third time.</h3>
+        <p>An order comes in. Someone copies it into a spreadsheet, then your accounting software, then another tool. Every single time.</p>
+      </article>
+      <article class="card reveal" style="--d:.06s">
+        <img class="icon pixel-img" src="img/icons/papers.svg" alt="" width="48" height="48">
+        <h3>‘Where did we put that?’</h3>
+        <p>The answer is in there somewhere. Finding it means digging through emails, opening file after file and interrupting someone who’s already busy.</p>
+      </article>
+      <article class="card reveal" style="--d:.12s">
+        <img class="icon pixel-img" src="img/icons/clock.svg" alt="" width="48" height="48">
+        <h3>The monthly report takes… most of the month.</h3>
+        <p>Someone pulls numbers from different places, checks them and rebuilds the same report. Next month, they do it all again.</p>
+      </article>
+      <article class="card reveal" style="--d:.18s">
+        <img class="icon pixel-img" src="img/icons/robot.svg" alt="" width="48" height="48">
+        <h3>You tried AI. The busywork’s still here.</h3>
+        <p>You gave it a go. Maybe you even paid for a subscription. But your team is still doing the same work by hand.</p>
+      </article>
+    </div>
+  </div>
+</section>
 
-    <!-- ═══════════════════════════════════════════════
-       SECTION 3 — INEFFICIENCY DETECTIVE
-  ═══════════════════════════════════════════════ -->
-    <section class="detective" id="detective">
-      <div class="detective-glow"></div>
-      <div class="container">
-        <div class="section-header fade-up">
-          <div class="section-label">
-            <span class="pink-dot"></span>Signature Tool
-          </div>
-          <h2 class="section-h2">
-            The Zuri <span class="pink-text">Inefficiency Detective</span>
-          </h2>
-          <p class="section-sub">
-            Find the work your team should not be doing manually.
-          </p>
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span class="ticker-item"><img class="pixel-img" src="img/icons/spreadsheet.svg" alt=""><s>Copy-paste</s></span>
+    <span class="ticker-item"><img class="pixel-img" src="img/icons/papers.svg" alt=""><s>Searching files</s></span>
+    <span class="ticker-item"><img class="pixel-img" src="img/icons/clock.svg" alt=""><s>Monthly reports</s></span>
+    <span class="ticker-item"><img class="pixel-img" src="img/icons/agents.svg" alt=""><s>Email triage</s></span>
+    <span class="ticker-item"><img class="pixel-img" src="img/icons/workflow.svg" alt=""><s>Manual handoffs</s></span>
+    <span class="ticker-item"><img class="pixel-img" src="img/icons/document.svg" alt=""><s>Re-typing quotes</s></span>
+    <span class="ticker-item"><img class="pixel-img" src="img/icons/dashboard.svg" alt=""><s>Chasing updates</s></span>
+    <span class="ticker-item"><img class="pixel-img" src="img/icons/robot.svg" alt=""><s>Tools nobody uses</s></span>
+    <span class="ticker-item"><img class="pixel-img" src="img/icons/spreadsheet.svg" alt=""><s>Copy-paste</s></span>
+    <span class="ticker-item"><img class="pixel-img" src="img/icons/papers.svg" alt=""><s>Searching files</s></span>
+    <span class="ticker-item"><img class="pixel-img" src="img/icons/clock.svg" alt=""><s>Monthly reports</s></span>
+    <span class="ticker-item"><img class="pixel-img" src="img/icons/agents.svg" alt=""><s>Email triage</s></span>
+    <span class="ticker-item"><img class="pixel-img" src="img/icons/workflow.svg" alt=""><s>Manual handoffs</s></span>
+    <span class="ticker-item"><img class="pixel-img" src="img/icons/document.svg" alt=""><s>Re-typing quotes</s></span>
+    <span class="ticker-item"><img class="pixel-img" src="img/icons/dashboard.svg" alt=""><s>Chasing updates</s></span>
+    <span class="ticker-item"><img class="pixel-img" src="img/icons/robot.svg" alt=""><s>Tools nobody uses</s></span>
+  </div>
+</div>
+
+<!-- 4. METHOD -->
+<section class="section method" id="method" aria-labelledby="method-title">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">How we work</span>
+      <h2 id="method-title">From a full process map to a working tool, step by step.</h2>
+    </div>
+    <div class="seq">
+      <div class="seq-line" aria-hidden="true"><i></i></div>
+
+      <article class="seq-step">
+        <div class="seq-text">
+          <span class="seq-num" aria-hidden="true">01</span>
+          <span class="seq-kicker reveal">Step 01 · Audit + full process mapping</span>
+          <h3 class="seq-title reveal" style="--d:.06s">Diagnose.</h3>
+          <p class="seq-body reveal" style="--d:.1s">We audit how work gets done across all departments. Then we map every process, tool and information system.</p>
+          <p class="seq-result reveal" style="--d:.16s">A complete picture of how your company really runs.</p>
+          <a class="seq-link reveal" style="--d:.2s" href="understand.html">See how we map <span aria-hidden="true">→</span></a>
         </div>
-
-        <!-- Intro card -->
-        <div class="detective-card fade-up" id="detectiveIntro">
-          <div class="detective-intro-header">
-            <div class="detective-badge">
-              <svg
-                width="18"
-                height="18"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="#FF2D78"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <circle cx="11" cy="11" r="8" />
-                <line x1="21" y1="21" x2="16.65" y2="16.65" />
-              </svg>
-              Mini Operational Diagnostic
-            </div>
-            <p class="detective-intro-body">
-              Answer 9 practical questions and get an instant read on where your
-              business may be leaking time through repetitive tasks, manual
-              processes, lookup work, and disconnected systems.
-            </p>
-            <div class="detective-meta">
-              <span class="detective-meta-item"
-                ><span class="pink-text">9</span> Questions</span
-              >
-              <span class="detective-meta-sep">·</span>
-              <span class="detective-meta-item"
-                ><span class="pink-text">~3</span> Minutes</span
-              >
-              <span class="detective-meta-sep">·</span>
-              <span class="detective-meta-item"
-                ><span class="pink-text">Instant</span> Score</span
-              >
-            </div>
-          </div>
-          <button
-            class="btn-primary detective-start-btn"
-            onclick="startDetective()"
-          >
-            Start the Diagnostic
-          </button>
+        <div class="seq-visual reveal" style="--d:.08s">
+          <div class="px-card"><div class="px-win">
+            <div class="px-bar" aria-hidden="true"><i></i><i></i><i></i><span>audit.exe</span></div>
+            <div class="px-body"><img class="pixel-img" src="img/01-diagnostiquer.svg" alt="" width="220" height="220"><span class="px-tag">Everyone involved</span></div>
+          </div></div>
         </div>
+      </article>
 
-        <!-- Quiz -->
-        <div class="detective-card" id="detectiveQuiz" style="display: none">
-          <div class="quiz-progress-bar">
-            <div class="quiz-progress-fill" id="quizProgressFill"></div>
-          </div>
-          <div class="quiz-steps" id="quizSteps"></div>
-          <div class="quiz-divider"></div>
-          <div class="quiz-question-text" id="quizQuestion"></div>
-          <div class="quiz-options" id="quizOptions"></div>
-          <div class="quiz-nav">
-            <button class="btn-ghost" id="quizBack" onclick="quizBack()">
-              ← Back
-            </button>
-            <button
-              class="btn-primary"
-              id="quizNext"
-              onclick="quizNext()"
-              disabled
-            >
-              Next →
-            </button>
-          </div>
-        </div>
-
-        <!-- Results -->
-        <div class="detective-card" id="detectiveResults" style="display: none">
-          <div class="results-score-wrap">
-            <div class="results-score-label">Automation Potential Score</div>
-            <div class="results-score-number" id="resultsScore">0</div>
-            <div class="results-score-bar-bg">
-              <div class="results-score-bar-fill" id="resultsScoreBar"></div>
-            </div>
-            <div class="results-tier-label" id="resultsTierLabel"></div>
-          </div>
-          <div class="results-message" id="resultsMessage"></div>
-          <div class="results-inefficiencies" id="resultsInefficiencies"></div>
-          <div class="results-recommended" id="resultsRecommended"></div>
-
-          <!-- Send report form -->
-          <div class="results-form-wrap">
-            <h4 class="results-form-title">
-              Send My Inefficiency Report to Zuri
-            </h4>
-            <p class="results-form-sub">
-              Your score and answers will be included automatically.
-            </p>
-            <form
-              class="results-form"
-              id="detectiveForm"
-              onsubmit="submitDetectiveForm(event)"
-            >
-              <div class="form-row">
-                <div class="form-field">
-                  <label class="form-label">Name *</label>
-                  <input
-                    type="text"
-                    required
-                    placeholder="Your name"
-                    class="form-input"
-                  />
-                </div>
-                <div class="form-field">
-                  <label class="form-label">Company *</label>
-                  <input
-                    type="text"
-                    required
-                    placeholder="Company name"
-                    class="form-input"
-                  />
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="form-field">
-                  <label class="form-label">Email *</label>
-                  <input
-                    type="email"
-                    required
-                    placeholder="you@company.com"
-                    class="form-input"
-                  />
-                </div>
-                <div class="form-field">
-                  <label class="form-label">Phone</label>
-                  <input
-                    type="tel"
-                    placeholder="+1 (555) 000-0000"
-                    class="form-input"
-                  />
-                </div>
-              </div>
-              <div class="form-field">
-                <label class="form-label">What does your business do? *</label>
-                <input
-                  type="text"
-                  required
-                  placeholder="Brief description"
-                  class="form-input"
-                />
-              </div>
-              <div class="form-field">
-                <label class="form-label"
-                  >What workflow feels most manual right now? *</label
-                >
-                <textarea
-                  rows="3"
-                  required
-                  placeholder="Describe it briefly..."
-                  class="form-input form-textarea"
-                ></textarea>
-              </div>
-              <button type="submit" class="btn-primary w-full">
-                Send My Inefficiency Report to Zuri
-              </button>
-            </form>
-          </div>
-
-          <button class="btn-ghost retake-btn" onclick="retakeDetective()">
-            ↺ Run the diagnostic again
-          </button>
-        </div>
-
-        <!-- Submitted -->
-        <div
-          class="detective-card text-center"
-          id="detectiveSubmitted"
-          style="display: none"
-        >
-          <div class="submitted-icon">
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="#FF2D78"
-              stroke-width="2.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <polyline points="20 6 9 17 4 12" />
-            </svg>
-          </div>
-          <h3 class="submitted-title">Report sent.</h3>
-          <p class="submitted-body">
-            Thanks — we'll review your workflow and get back to you shortly.
-          </p>
-          <button class="btn-ghost retake-btn" onclick="retakeDetective()">
-            ↺ Run the diagnostic again
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <!-- ═══════════════════════════════════════════════
-       SECTION 4 — OUR PHILOSOPHY
-  ═══════════════════════════════════════════════ -->
-    <section class="philosophy section-alt" id="philosophy">
-      <div class="container">
-        <div class="section-header fade-up">
-          <div class="section-label">
-            <span class="pink-dot"></span>Our Philosophy
-          </div>
-          <h2 class="section-h2">
-            We build <span class="pink-text">with purpose.</span>
-          </h2>
-        </div>
-        <div class="philosophy-grid">
-          <div class="philosophy-card fade-up delay-1">
-            <div class="philosophy-num">01</div>
-            <h3 class="philosophy-title">Practical before flashy</h3>
-            <p class="philosophy-body">
-              We prioritize systems that create measurable operational value,
-              not AI experiments that look impressive but do not get used.
-            </p>
-          </div>
-          <div class="philosophy-card fade-up delay-2">
-            <div class="philosophy-num">02</div>
-            <h3 class="philosophy-title">Custom where it matters</h3>
-            <p class="philosophy-body">
-              Your business does not run like everyone else's. Your systems
-              should reflect your workflows, team, and constraints.
-            </p>
-          </div>
-          <div class="philosophy-card fade-up delay-3">
-            <div class="philosophy-num">03</div>
-            <h3 class="philosophy-title">Human-in-the-loop</h3>
-            <p class="philosophy-body">
-              We design AI around how people actually work, with approval,
-              visibility, and control where it matters.
-            </p>
-          </div>
-          <div class="philosophy-card fade-up delay-4">
-            <div class="philosophy-num">04</div>
-            <h3 class="philosophy-title">Ultra-speed delivery</h3>
-            <p class="philosophy-body">
-              We are one of the fastest AI and digital solution builders on the
-              market. Most projects go from discovery to first working version
-              in 8 days, not months.
-            </p>
-          </div>
-        </div>
-        <blockquote class="philosophy-quote fade-up">
-          "We find operational waste and build useful systems that remove it.
-          Not because AI is trending — because your team's time is worth
-          protecting."
-        </blockquote>
-      </div>
-    </section>
-
-    <!-- ═══════════════════════════════════════════════
-       SECTION 5 — GET IN TOUCH
-  ═══════════════════════════════════════════════ -->
-    <section class="contact" id="contact">
-      <div class="container">
-        <div class="contact-wrap">
-          <div class="section-header fade-up">
-            <div class="section-label">
-              <span class="pink-dot"></span>Get In Touch
-            </div>
-            <p class="contact-intro">Start saving time &amp; money now.</p>
-          </div>
-          <form
-            class="contact-form fade-up"
-            id="contactForm"
-            onsubmit="submitContactForm(event)"
-          >
-            <div class="form-row">
-              <div class="form-field">
-                <label class="form-label">Name *</label>
-                <input
-                  type="text"
-                  required
-                  placeholder="Your name"
-                  class="form-input"
-                  id="contactName"
-                />
-              </div>
-              <div class="form-field">
-                <label class="form-label">Company *</label>
-                <input
-                  type="text"
-                  required
-                  placeholder="Company name"
-                  class="form-input"
-                  id="contactCompany"
-                />
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="form-field">
-                <label class="form-label">Email *</label>
-                <input
-                  type="email"
-                  required
-                  placeholder="you@company.com"
-                  class="form-input"
-                  id="contactEmail"
-                />
-              </div>
-              <div class="form-field">
-                <label class="form-label">Phone</label>
-                <input
-                  type="tel"
-                  placeholder="+1 (555) 000-0000"
-                  class="form-input"
-                  id="contactPhone"
-                />
-              </div>
-            </div>
-            <div class="form-field">
-              <label class="form-label">What do you want help with? *</label>
-              <select
-                required
-                class="form-input form-select"
-                id="contactService"
-              >
-                <option value="" disabled selected>
-                  Select a service area
-                </option>
-                <option>Custom digital solution</option>
-                <option>AI automation</option>
-                <option>Workflow automation</option>
-                <option>Internal tool / dashboard</option>
-                <option>Website / portal</option>
-                <option>Chrome extension</option>
-                <option>Not sure yet</option>
-              </select>
-            </div>
-            <div class="form-field">
-              <label class="form-label">Message (optional)</label>
-              <textarea
-                rows="4"
-                placeholder="Anything else you'd like us to know about your workflow or goals..."
-                class="form-input form-textarea"
-                id="contactMessage"
-              ></textarea>
-            </div>
-            <button type="submit" class="btn-primary w-full">
-              Contact Zuri
-            </button>
-          </form>
-          <div
-            class="contact-submitted"
-            id="contactSubmitted"
-            style="display: none"
-          >
-            <div class="submitted-icon">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="#FF2D78"
-                stroke-width="2.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <polyline points="20 6 9 17 4 12" />
-              </svg>
-            </div>
-            <h3 class="submitted-title">Message received.</h3>
-            <p class="submitted-body">
-              Thanks — we'll review your workflow and get back to you shortly.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-      <div class="footer-cta-strip">
-        <div class="container footer-cta-inner">
+      <div class="deliv reveal" id="sample-map">
+        <div class="deliv-head">
           <div>
-            <p class="footer-ready">Ready to start?</p>
-            <p class="footer-cta-text">
-              Find the work your team should not be doing manually.
-            </p>
+            <span class="seq-kicker">What the mapping reveals</span>
+            <h3>We find what's missing.</h3>
+            <p>We map each process step by step, then flag what could be optimized: missing links between tools, information entered twice, bottlenecks, and tasks that can be automated. Explore the example below.</p>
           </div>
-          <a href="#detective" class="btn-primary">Run the Diagnostic</a>
+          <ul class="deliv-legend" aria-label="How to read the map">
+            <li><i class="manual"></i>Done by hand</li>
+            <li><i class="email"></i>Email or chat</li>
+            <li><i class="broken"></i>Missing link</li>
+          </ul>
+        </div>
+        <div class="px-bar" aria-hidden="true"><i></i><i></i><i></i><span>mapping · supplier invoices · sample company</span></div>
+        <div class="pm" id="pm">
+          <div class="pm-bar">
+            <div class="pm-toggle" role="group" aria-label="View">
+              <button type="button" data-view="map" aria-pressed="true">The process</button>
+              <button type="button" data-view="scan" aria-pressed="false">▶ Scan for what's missing</button>
+            </div>
+            <ul class="pm-stats" aria-live="polite"></ul>
+          </div>
+          <div class="pm-scroll">
+            <div class="pm-canvas">
+              <div class="pm-grid"></div>
+              <svg class="pm-wires" aria-hidden="true"></svg>
+            </div>
+          </div>
+          <p class="pm-hint">Swipe to see the whole process →</p>
+          <div class="pm-detail" aria-live="polite"></div>
+        </div>
+        <div class="deliv-foot">
+          <span>Fictional example: one process of a 4-site restaurant group. Your process map covers all your processes, built from our audit of your teams and your real tools.</span>
         </div>
       </div>
-      <div class="footer-bottom">
-        <div class="container footer-bottom-inner">
-          <div class="footer-logo">
-            <img
-              src="assets/img/zuri-logo-pink.png"
-              alt="Zuri Solutions"
-              class="nav-logo-img"
-            />
-            <span class="footer-tagline"
-              >AI Integration · Automation · Custom Software</span
-            >
-          </div>
-          <div class="footer-links">
-            <a href="mailto:contact@zurisolutions.dev" class="footer-link"
-              >contact@zurisolutions.dev</a
-            >
-            <a
-              href="https://linkedin.com"
-              target="_blank"
-              rel="noopener"
-              class="footer-link"
-              >LinkedIn</a
-            >
-          </div>
-          <p class="footer-copy">
-            &copy; <span id="footerYear"></span> Zuri Solutions. All rights
-            reserved.
-          </p>
-        </div>
-      </div>
-    </footer>
 
-    <script src="js/main.js"></script>
-<script src="js/zuri-i18n.js"></script>
-  </body>
+      <div class="seq-pay reveal">
+        <div><strong>You start paying here</strong><span>Once the process map is delivered.</span></div>
+      </div>
+
+      <article class="seq-step seq-step--rev">
+        <div class="seq-text">
+          <span class="seq-num" aria-hidden="true">02</span>
+          <span class="seq-kicker reveal">Step 02 · Quick wins first</span>
+          <h3 class="seq-title reveal" style="--d:.06s">Prioritize.</h3>
+          <p class="seq-body reveal" style="--d:.1s">We rank every opportunity by impact and effort. Quick wins come first.</p>
+          <p class="seq-result reveal" style="--d:.16s">A short, concrete action plan.</p>
+          <a class="seq-link reveal" style="--d:.2s" href="build.html">See how we build <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="seq-visual reveal" style="--d:.08s">
+          <div class="px-card px-card--ink"><div class="px-win">
+            <div class="px-bar" aria-hidden="true"><i></i><i></i><i></i><span>priorities.xls</span></div>
+            <div class="px-body"><img class="pixel-img" src="img/02-prioriser.svg" alt="" width="220" height="220"><span class="px-tag">Impact × effort</span></div>
+          </div></div>
+        </div>
+      </article>
+
+      <article class="seq-step">
+        <div class="seq-text">
+          <span class="seq-num" aria-hidden="true">03</span>
+          <span class="seq-kicker reveal">Step 03 · First tool live 8 days after mapping</span>
+          <h3 class="seq-title reveal" style="--d:.06s">Build.</h3>
+          <p class="seq-body reveal" style="--d:.1s">A working tool, connected to your existing software, tested with your team.</p>
+          <p class="seq-result reveal" style="--d:.16s">Something you use, not a slide deck.</p>
+          <a class="seq-link reveal" style="--d:.2s" href="build.html">See how we build <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="seq-visual reveal" style="--d:.08s">
+          <div class="px-card"><div class="px-win">
+            <div class="px-bar" aria-hidden="true"><i></i><i></i><i></i><span>build_v1</span></div>
+            <div class="px-body"><img class="pixel-img" src="img/03-construire.svg" alt="" width="220" height="220"><span class="px-tag">Day 8 · live</span></div>
+          </div></div>
+        </div>
+      </article>
+
+      <article class="seq-step seq-step--rev">
+        <div class="seq-text">
+          <span class="seq-num" aria-hidden="true">04</span>
+          <span class="seq-kicker reveal">Step 04 · Gains that compound</span>
+          <h3 class="seq-title reveal" style="--d:.06s">Support &amp; improve.</h3>
+          <p class="seq-body reveal" style="--d:.1s">We track the time saved, adjust, and extend what works.</p>
+          <p class="seq-result reveal" style="--d:.16s">Gains that keep growing.</p>
+          <a class="seq-link reveal" style="--d:.2s" href="build.html">See how we build <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="seq-visual reveal" style="--d:.08s">
+          <div class="px-card px-card--ink"><div class="px-win">
+            <div class="px-bar" aria-hidden="true"><i></i><i></i><i></i><span>support.log</span></div>
+            <div class="px-body"><img class="pixel-img" src="img/04-accompagner.svg" alt="" width="220" height="220"><span class="px-tag">Always on</span></div>
+          </div></div>
+        </div>
+      </article>
+    </div>
+
+    <div class="risk reveal">
+      <p>You pay nothing until your processes and systems are <b>fully mapped</b>. You see the value before you spend a cent.</p>
+      <a class="btn btn-primary" href="#contact" data-dialog="contact-dialog">Book my free call <span class="arrow" aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- 5. WHAT WE BUILD -->
+<section class="section" id="what-we-do" aria-labelledby="sol-title">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">What we build</span>
+      <h2 id="sol-title">Custom tools, built around how your team actually works.</h2>
+    </div>
+    <div class="sol" data-sol>
+      <div class="sol-tabs" role="tablist" aria-label="Solutions">
+        <button type="button" role="tab" id="sol-t1" aria-controls="sol-p1" aria-selected="true"><img class="pixel-img" src="img/icons/agents.svg" alt="" width="32" height="32"><span>AI agents</span><small>01</small></button>
+        <button type="button" role="tab" id="sol-t2" aria-controls="sol-p2" aria-selected="false"><img class="pixel-img" src="img/icons/workflow.svg" alt="" width="32" height="32"><span>Workflow automation</span><small>02</small></button>
+        <button type="button" role="tab" id="sol-t3" aria-controls="sol-p3" aria-selected="false"><img class="pixel-img" src="img/icons/document.svg" alt="" width="32" height="32"><span>AI document processing</span><small>03</small></button>
+        <button type="button" role="tab" id="sol-t4" aria-controls="sol-p4" aria-selected="false"><img class="pixel-img" src="img/icons/dashboard.svg" alt="" width="32" height="32"><span>Dashboards &amp; internal tools</span><small>04</small></button>
+        <button type="button" role="tab" id="sol-t5" aria-controls="sol-p5" aria-selected="false"><img class="pixel-img" src="img/icons/software.svg" alt="" width="32" height="32"><span>Custom software, portals &amp; websites</span><small>05</small></button>
+        <button type="button" role="tab" id="sol-t6" aria-controls="sol-p6" aria-selected="false"><img class="pixel-img" src="img/icons/extension.svg" alt="" width="32" height="32"><span>Chrome extensions &amp; lightweight tools</span><small>06</small></button>
+      </div>
+      <div class="sol-panels">
+        <div class="sol-panel" role="tabpanel" id="sol-p1" aria-labelledby="sol-t1">
+          <div class="px-card"><div class="px-win">
+            <div class="px-bar" aria-hidden="true"><i></i><i></i><i></i><span>ai-agents</span></div>
+            <div class="sol-body">
+              <h3>AI agents</h3>
+              <p class="sol-lead">Assistants trained on your documents and tools. They look things up, draft answers and prepare the work, and a person approves before anything is sent.</p>
+              <div class="flow" aria-hidden="true">
+                <span class="f-step"><img class="pixel-img" src="img/icons/prompt.svg" alt="">Question or email</span>
+                <b class="f-arrow">→</b>
+                <span class="f-step f-zuri"><img class="pixel-img" src="img/zuri-logo.svg" alt="">Zuri</span>
+                <b class="f-arrow">→</b>
+                <span class="f-step"><img class="pixel-img" src="img/icons/agents.svg" alt="">Draft to approve</span>
+              </div>
+              <h4>Typical examples</h4>
+              <ul class="sol-ex"><li>Answer recurring customer or supplier questions from your own documents.</li><li>Draft replies to incoming emails, ready for a person to check and send.</li><li>Find information across files, emails and tools with one question.</li></ul>
+            </div>
+          </div></div>
+        </div>
+        <div class="sol-panel" role="tabpanel" id="sol-p2" aria-labelledby="sol-t2">
+          <div class="px-card px-card--ink"><div class="px-win">
+            <div class="px-bar" aria-hidden="true"><i></i><i></i><i></i><span>workflows</span></div>
+            <div class="sol-body">
+              <h3>Workflow automation</h3>
+              <p class="sol-lead">The hand-offs between your tools happen on their own: no more copying, re-typing or chasing. Every rule is agreed on with your team.</p>
+              <div class="flow" aria-hidden="true">
+                <span class="f-step"><img class="pixel-img" src="img/icons/document.svg" alt="">New order</span>
+                <b class="f-arrow">→</b>
+                <span class="f-step f-zuri"><img class="pixel-img" src="img/zuri-logo.svg" alt="">Zuri</span>
+                <b class="f-arrow">→</b>
+                <span class="f-step"><img class="pixel-img" src="img/icons/spreadsheet.svg" alt="">Every tool updated</span>
+              </div>
+              <h4>Typical examples</h4>
+              <ul class="sol-ex"><li>A new order is created in every tool that needs it, automatically.</li><li>Approval requests go straight to the right person.</li><li>Reminders and follow-ups are sent on time, without anyone thinking about it.</li></ul>
+            </div>
+          </div></div>
+        </div>
+        <div class="sol-panel" role="tabpanel" id="sol-p3" aria-labelledby="sol-t3">
+          <div class="px-card"><div class="px-win">
+            <div class="px-bar" aria-hidden="true"><i></i><i></i><i></i><span>documents</span></div>
+            <div class="sol-body">
+              <h3>AI document processing</h3>
+              <p class="sol-lead">Invoices, delivery notes, forms, quotes: the AI reads them, extracts what matters and fills your tools, or drafts the document for you.</p>
+              <div class="flow" aria-hidden="true">
+                <span class="f-step"><img class="pixel-img" src="img/icons/papers.svg" alt="">Document</span>
+                <b class="f-arrow">→</b>
+                <span class="f-step f-zuri"><img class="pixel-img" src="img/zuri-logo.svg" alt="">Zuri</span>
+                <b class="f-arrow">→</b>
+                <span class="f-step"><img class="pixel-img" src="img/icons/spreadsheet.svg" alt="">Clean data</span>
+              </div>
+              <h4>Typical examples</h4>
+              <ul class="sol-ex"><li>Read invoices and delivery notes and check them against the order.</li><li>Generate quotes, reports and summaries from your own templates.</li><li>Check documents against your rules before they go out.</li></ul>
+            </div>
+          </div></div>
+        </div>
+        <div class="sol-panel" role="tabpanel" id="sol-p4" aria-labelledby="sol-t4">
+          <div class="px-card px-card--ink"><div class="px-win">
+            <div class="px-bar" aria-hidden="true"><i></i><i></i><i></i><span>dashboards</span></div>
+            <div class="sol-body">
+              <h3>Dashboards &amp; internal tools</h3>
+              <p class="sol-lead">One place to see what's happening, per site or per team, updated on its own, with alerts when something gets stuck.</p>
+              <div class="flow" aria-hidden="true">
+                <span class="f-step"><img class="pixel-img" src="img/icons/software.svg" alt="">Your tools</span>
+                <b class="f-arrow">→</b>
+                <span class="f-step f-zuri"><img class="pixel-img" src="img/zuri-logo.svg" alt="">Zuri</span>
+                <b class="f-arrow">→</b>
+                <span class="f-step"><img class="pixel-img" src="img/icons/dashboard.svg" alt="">Live view</span>
+              </div>
+              <h4>Typical examples</h4>
+              <ul class="sol-ex"><li>A live dashboard per site or team, without rebuilding it every month.</li><li>One place to track requests, orders or tasks.</li><li>Alerts when something is late or blocked.</li></ul>
+            </div>
+          </div></div>
+        </div>
+        <div class="sol-panel" role="tabpanel" id="sol-p5" aria-labelledby="sol-t5">
+          <div class="px-card"><div class="px-win">
+            <div class="px-bar" aria-hidden="true"><i></i><i></i><i></i><span>custom-apps</span></div>
+            <div class="sol-body">
+              <h3>Custom software, portals &amp; websites</h3>
+              <p class="sol-lead">When no tool fits, we build one around your process: an internal back-office, a client or supplier portal, a website connected to your tools.</p>
+              <div class="flow" aria-hidden="true">
+                <span class="f-step"><img class="pixel-img" src="img/icons/workflow.svg" alt="">Your process</span>
+                <b class="f-arrow">→</b>
+                <span class="f-step f-zuri"><img class="pixel-img" src="img/zuri-logo.svg" alt="">Zuri</span>
+                <b class="f-arrow">→</b>
+                <span class="f-step"><img class="pixel-img" src="img/icons/software.svg" alt="">Used every day</span>
+              </div>
+              <h4>Typical examples</h4>
+              <ul class="sol-ex"><li>An internal back-office shaped around how your team works.</li><li>A portal where clients or suppliers follow their requests themselves.</li><li>A website connected to your tools, not a separate island.</li></ul>
+            </div>
+          </div></div>
+        </div>
+        <div class="sol-panel" role="tabpanel" id="sol-p6" aria-labelledby="sol-t6">
+          <div class="px-card px-card--ink"><div class="px-win">
+            <div class="px-bar" aria-hidden="true"><i></i><i></i><i></i><span>extensions</span></div>
+            <div class="sol-body">
+              <h3>Chrome extensions &amp; lightweight tools</h3>
+              <p class="sol-lead">Small tools inside the browser your team already uses: one-click actions, auto-filled forms, quick lookups.</p>
+              <div class="flow" aria-hidden="true">
+                <span class="f-step"><img class="pixel-img" src="img/icons/prompt.svg" alt="">Your browser</span>
+                <b class="f-arrow">→</b>
+                <span class="f-step f-zuri"><img class="pixel-img" src="img/zuri-logo.svg" alt="">Zuri</span>
+                <b class="f-arrow">→</b>
+                <span class="f-step"><img class="pixel-img" src="img/icons/extension.svg" alt="">Done in one click</span>
+              </div>
+              <h4>Typical examples</h4>
+              <ul class="sol-ex"><li>One-click actions inside the web tools you already use.</li><li>Forms filled in automatically from your data.</li><li>Quick lookups without switching tabs.</li></ul>
+            </div>
+          </div></div>
+        </div>
+      </div>
+    </div>
+    <p class="human"><b>Human in the loop</b>AI prepares, people decide. Every system includes approval and visibility where it matters.</p>
+    <a class="seq-link" href="build.html">See how we build <span aria-hidden="true">→</span></a>
+  </div>
+</section>
+
+<!-- 6. WHY ZURI: comparison -->
+<section class="section method" id="why-zuri" aria-labelledby="cmp-title" style="border-top:2px solid var(--ink)">
+  <div class="wrap">
+    <div class="cmp-head">
+      <div class="section-head">
+        <span class="eyebrow">Why Zuri</span>
+        <h2 id="cmp-title">Three ways to tackle it.</h2>
+      </div>
+      <div class="ba-anim" aria-hidden="true">
+        <figure>
+          <video autoplay muted loop playsinline preload="metadata" poster="media/stamping-poster.webp" width="190" height="190"><source src="media/stamping.mp4" type="video/mp4"></video>
+          <figcaption>By hand</figcaption>
+        </figure>
+        <span class="to">→</span>
+        <figure>
+          <video autoplay muted loop playsinline preload="metadata" poster="media/automation-machine-poster.webp" width="190" height="190"><source src="media/automation-machine.mp4" type="video/mp4"></video>
+          <figcaption>With Zuri</figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="compare-wrap reveal">
+      <table class="compare">
+        <thead>
+          <tr><th scope="col"><span class="sr-only">Criteria</span></th><th scope="col">Do it yourself</th><th scope="col">Agency or IT firm</th><th scope="col" class="zuri">Zuri</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">First result</th><td data-label="Do it yourself">Depends on spare time</td><td data-label="Agency or IT firm">After scoping &amp; quotes</td><td data-label="Zuri" class="zuri">First tool live 8 days after mapping</td></tr>
+          <tr><th scope="row">Starting point</th><td data-label="Do it yourself">A trendy tool</td><td data-label="Agency or IT firm">A spec document</td><td data-label="Zuri" class="zuri">Your real tasks (audit)</td></tr>
+          <tr><th scope="row">Financial risk</th><td data-label="Do it yourself">Lost time. Costly mistakes.</td><td data-label="Agency or IT firm">Upfront commitment</td><td data-label="Zuri" class="zuri">Pay after the mapping</td></tr>
+          <tr><th scope="row">Team effort</th><td data-label="Do it yourself">High</td><td data-label="Agency or IT firm">Steering meetings</td><td data-label="Zuri" class="zuri">One contact, few meetings</td></tr>
+          <tr><th scope="row">Your team after</th><td data-label="Do it yourself">On its own</td><td data-label="Agency or IT firm">Dependent on the vendor</td><td data-label="Zuri" class="zuri">Trained to use and extend it</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- DIALOG: diagnostic (built by js/zuri.js) -->
+<section class="section dark final" id="contact" aria-labelledby="final-title">
+  <div class="wrap">
+    <img class="runner-goal pixel-img" src="img/zuri-logo-clair.svg" alt="" width="64" height="74">
+    <span class="eyebrow">Ready, player one?</span>
+    <h2 id="final-title">Let's find your <em>first quick win.</em></h2>
+    <p class="lead">Free, no commitment. It starts with a short call, then we interview your teams and map how work really gets done.</p>
+    <div class="ctas">
+      <a class="btn btn-primary" href="#contact" data-dialog="contact-dialog">Book my free call <span class="arrow" aria-hidden="true">→</span></a>
+      <a class="btn btn-ghost" href="#diagnostic" data-dialog="diagnostic">Where’s my time going? <small>3 min</small></a>
+    </div>
+    <a class="mail" href="mailto:contact@zurisolutions.dev">Or email the team: contact@zurisolutions.dev</a>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrap">
+    <a class="brand" href="#top">
+      <img src="img/zuri-logo-clair.svg" alt="" width="33" height="38" class="pixel-img" style="height:34px;width:auto">
+      <span>Zuri <b>Solutions</b></span>
+    </a>
+    <nav aria-label="Footer">
+      <a href="mailto:contact@zurisolutions.dev">contact@zurisolutions.dev</a>
+      <a href="training.html">AI training</a>
+      <a href="legal.html">Legal notice</a>
+      <a href="terms.html">Terms of use</a>
+      <a href="privacy.html">Privacy &amp; cookies</a>
+    </nav>
+    <div class="lang" aria-label="Language">
+      <a href="index.html" aria-current="true">EN</a>
+      <a href="fr/index.html" lang="fr" hreflang="fr">FR</a>
+    </div>
+    <p class="bottom">© 2026 Zuri Solutions · AI automation, custom software &amp; team training</p>
+  </div>
+</footer>
+
+<!-- DIALOG: diagnostic (built by js/zuri.js) -->
+<dialog class="modal" id="diagnostic" aria-labelledby="diag-title">
+  <div class="px-bar"><span>inefficiency-detective.exe</span><button type="button" data-close aria-label="Close">✕</button></div>
+  <div class="modal-body quiz" data-quiz></div>
+</dialog>
+
+<!-- DIALOG: contact -->
+<dialog class="modal" id="contact-dialog" aria-labelledby="contact-title">
+  <div class="px-bar"><span>book-a-call.exe</span><button type="button" data-close aria-label="Close">✕</button></div>
+  <form class="modal-body" data-form="call">
+    <h2 id="contact-title">Book your free call.</h2>
+    <p class="sub">Free, no commitment. Tell us a little about your company so we can come to the call prepared.</p>
+    <div class="field-row">
+      <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" autocomplete="name" required></div>
+      <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+    </div>
+    <div class="field-row">
+      <div class="field"><label for="f-company">Company</label><input id="f-company" name="company" autocomplete="organization" required></div>
+      <div class="field"><label for="f-site">Website <small>(optional)</small></label><input id="f-site" name="site" inputmode="url" autocomplete="url" placeholder="www." data-k="Website"></div>
+    </div>
+    <div class="field"><label for="f-about">What does your company do?</label><textarea id="f-about" name="about" rows="2" placeholder="e.g. 4 restaurants in Lyon, 60 staff" required data-k="Company activity"></textarea></div>
+    <div class="field"><label for="f-size">Team size</label><select id="f-size" name="size" required data-k="Team size"><option value="" disabled selected>Choose…</option><option>1–5</option><option>6–15</option><option>16–50</option><option>51–200</option><option>200+</option></select></div>
+    <div class="field"><label for="f-msg">What takes too much time today? <small>(optional)</small></label><textarea id="f-msg" name="message" rows="3" data-k="What takes too much time"></textarea></div>
+    <div class="hp" aria-hidden="true"><label for="f-hp">Leave empty</label><input id="f-hp" name="hp" tabindex="-1" autocomplete="off"></div>
+    <p class="consent">By sending this form you agree to our <a href="privacy.html">privacy policy</a>.</p>
+    <button class="btn btn-primary" type="submit">Send <span class="arrow" aria-hidden="true">→</span></button>
+    <p class="form-status" role="status"></p>
+  </form>
+</dialog>
+
+<script>
+  // Page config: translatable strings (i18n) and the sample process map
+  window.ZURI = {
+    i18n: {},
+    pm: {
+      lanes: [
+        { id: 'sup', label: 'Supplier', sub: 'external' },
+        { id: 'mgr', label: 'Restaurant manager', sub: 'one per site' },
+        { id: 'acc', label: 'Accounting', sub: 'head office' },
+        { id: 'sys', label: 'Tools', sub: 'software' }
+      ],
+      nodes: [
+        { id: 't1', lane: 'sup', col: 1, type: 'event', label: 'Invoice arrives by email', who: 'Supplier', tool: 'Email' },
+        { id: 't2', lane: 'acc', col: 2, type: 'task', label: 'Types the invoice into accounting', who: 'Accountant', tool: 'Accounting software' },
+        { id: 't3', lane: 'sys', col: 3, type: 'sys', label: 'Accounting software', who: 'Accounting', tool: 'Accounting software' },
+        { id: 't4', lane: 'mgr', col: 3, type: 'task', label: 'Receives it to approve', who: 'Restaurant manager', tool: 'Email' },
+        { id: 't5', lane: 'mgr', col: 4, type: 'check', label: 'Checks it against the delivery by eye', who: 'Restaurant manager', tool: 'Delivery note + stock tool' },
+        { id: 't6', lane: 'sys', col: 4, type: 'sys', label: 'Stock & ordering tool', who: 'Restaurant manager', tool: 'Stock tool' },
+        { id: 't7', lane: 'mgr', col: 5, type: 'task', label: 'Approves by email', who: 'Restaurant manager', tool: 'Email' },
+        { id: 't8', lane: 'acc', col: 6, type: 'task', label: 'Schedules the payment', who: 'Accountant', tool: 'Bank portal' },
+        { id: 't9', lane: 'sys', col: 7, type: 'sys', label: 'Bank', who: 'Accounting', tool: 'Bank portal' }
+      ],
+      edges: [
+        ['t1', 't2', 'email', 'invoice'], ['t2', 't3', 'manual', 'typed'], ['t2', 't4', 'email', 'to approve'],
+        ['t4', 't5', 'manual', ''], ['t6', 't5', 'broken', 'not connected'], ['t5', 't7', 'manual', ''],
+        ['t7', 't8', 'email', 'approved'], ['t8', 't9', 'manual', 'typed again'], ['t3', 't9', 'broken', 'not connected']
+      ],
+      findings: [
+        { nodes: ['t5', 't6'], kind: 'missing', tag: 'Missing link', title: 'Orders and invoices never meet', text: 'The stock tool knows what was ordered and delivered, but the invoice check is done by eye.' },
+        { nodes: ['t2'], kind: 'twice', tag: 'Data typed twice', title: 'Every invoice is re-typed', text: 'The invoice already exists as a file, yet it is typed into accounting line by line.' },
+        { nodes: ['t4', 't7'], kind: 'neck', tag: 'Bottleneck', title: 'Approvals stuck in inboxes', text: 'Invoices to approve arrive by email in batches, often in the middle of service.' },
+        { nodes: ['t8', 't9'], kind: 'twice', tag: 'Data typed twice', title: 'Payments entered by hand', text: 'Accounting and the bank aren\'t connected: payment details are typed in again.' }
+      ]
+    }
+  };
+</script>
+<script src="js/zuri.js"></script>
+</body>
 </html>
