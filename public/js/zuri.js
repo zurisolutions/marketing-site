@@ -29,9 +29,14 @@
   const CONFIG = {
     // Booking page (Cal.com, Calendly, Google Calendar…). Empty: the "Book" buttons open the contact form.
     bookingUrl: '',
-    // Existing Google Form: answers land in its Google Sheet (turn on "email notifications" in Google Forms)
+    // Web3Forms access key (web3forms.com, free): every request is emailed to the address the key was created with.
+    web3formsKey: '8de26666-75be-4922-be96-37a388010958',
+    // Existing Google Form, kept as a copy in its Google Sheet
     formAction: 'https://docs.google.com/forms/d/e/1FAIpQLSfF-r3-FCEE_uj0uXPLfzsuHwhwF3HGfOxRQ7ApnLJT6zTtuA/formResponse',
-    formFields: { name: 'entry.334027758', company: 'entry.1013693672', email: 'entry.392384361', message: 'entry.1089196283' }
+    formFields: { name: 'entry.334027758', company: 'entry.1013693672', email: 'entry.392384361', phone: 'entry.468573154', service: 'entry.121792333', message: 'entry.1089196283' },
+    // The Google Form makes company, phone and "What do you want help with?" required: without them
+    // Google silently rejects the answer. "service" must be one of the form's own choices.
+    formDefaults: { company: 'Not provided', phone: 'Not provided', service: 'Not sure yet' }
   };
   const FR = document.documentElement.lang === 'fr';
   const S = FR ? {
@@ -66,11 +71,23 @@
     doneMail: 'We\'ll get back to you by email to set up the call.', book: 'Pick a time →', retry: 'Retake the check'
   };
 
-  // Leads: posted to the Google Form (no-cors: the response can't be read, only network errors)
-  const sendLead = data => {
+  // Leads: emailed through Web3Forms (its answer is checked), and copied to the Google Form
+  // (no-cors there: Google's answer can't be read, so it never blocks the visitor)
+  const toGoogle = data => {
     const body = new URLSearchParams();
-    Object.entries(CONFIG.formFields).forEach(([k, id]) => { if (data[k]) body.append(id, data[k]); });
+    Object.entries(CONFIG.formFields).forEach(([k, id]) => { const v = data[k] || CONFIG.formDefaults[k]; if (v) body.append(id, v); });
     return fetch(CONFIG.formAction, { method: 'POST', mode: 'no-cors', body });
+  };
+  const sendLead = data => {
+    if (!CONFIG.web3formsKey) return toGoogle(data);
+    toGoogle(data).catch(() => {});
+    return fetch('https://api.web3forms.com/submit', {
+      method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+      body: JSON.stringify({
+        access_key: CONFIG.web3formsKey, subject: `Zuri Solutions · ${data.tag}`, from_name: 'zurisolutions.dev',
+        name: data.name, email: data.email, company: data.company || '—', message: data.message
+      })
+    }).then(r => r.json()).then(j => { if (!j.success) throw new Error(j.message); });
   };
   const esc = v => String(v).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 
@@ -107,7 +124,7 @@
     // fields marked data-k (website, activity, team size…) are sent as labelled lines of the message
     const details = [...f.querySelectorAll('[data-k]')].filter(el => el.value.trim()).map(el => `${el.dataset.k}: ${el.value.trim()}`).join('\n');
     const message = `[${tag}] ${location.pathname}\n\n${extra || details || v('message')}`;
-    return sendLead({ name: v('name'), email: v('email'), company: v('company'), message })
+    return sendLead({ tag, name: v('name'), email: v('email'), company: v('company'), message })
       .catch(err => { btn.disabled = false; if (status) status.textContent = S.error; throw err; });
   };
   document.querySelectorAll('form[data-form]').forEach(f => f.addEventListener('submit', e => {
