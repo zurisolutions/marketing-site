@@ -1071,14 +1071,3 @@ dialog.modal--wide { width: min(980px, calc(100vw - 32px)); }
   .qw-q b { font-size: 16px; }
   .qw-q small, .qw-q em { font-size: 9px; }
 }
-
-/* ── FR header: longer nav labels, so the full nav needs more room ── */
-@media (max-width: 1340px) {
-  :lang(fr) .nav, :lang(fr) .header .lang { display: none; }
-  :lang(fr) .menu-btn { display: block; margin-left: 0; }
-  :lang(fr) .header .btn { display: inline-flex; margin-left: auto; }
-}
-@media (max-width: 700px) {
-  :lang(fr) .header .btn { display: none; }
-  :lang(fr) .menu-btn { margin-left: auto; }
-}
